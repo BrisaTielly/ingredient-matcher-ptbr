@@ -7,7 +7,12 @@ import csv
 from pathlib import Path
 
 from ingredient_matcher.data import DEFAULT_OUTPUT
-from ingredient_matcher.evaluate import evaluate_method, read_dataset, write_results
+from ingredient_matcher.evaluate import (
+    DEFAULT_BASE_MODEL,
+    evaluate_method,
+    read_dataset,
+    write_results,
+)
 from ingredient_matcher.matchers import EmbeddingMatcher, FuzzyMatcher, Matcher
 
 
@@ -23,7 +28,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=Path, default=Path("data/open_prices_annotation.csv"))
     parser.add_argument("--calibration-dataset", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--methods", default="fuzzy,fine_tuned")
+    parser.add_argument("--methods", default="fuzzy,e5,fine_tuned")
+    parser.add_argument("--base-model", default=DEFAULT_BASE_MODEL)
     parser.add_argument(
         "--fine-tuned-model", default="BrisaTielly/ingredient-matcher-ptbr-model"
     )
@@ -37,6 +43,8 @@ def main() -> None:
     matchers: list[tuple[str, Matcher]] = []
     if "fuzzy" in requested:
         matchers.append(("RapidFuzz", FuzzyMatcher()))
+    if "e5" in requested:
+        matchers.append(("E5 base", EmbeddingMatcher(args.base_model)))
     if "fine_tuned" in requested:
         matchers.append(("E5 fine-tuned", EmbeddingMatcher(args.fine_tuned_model)))
 

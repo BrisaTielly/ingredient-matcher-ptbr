@@ -38,6 +38,8 @@ O dataset é produzido por regras determinísticas em `src/ingredient_matcher/da
 
 A fatia externa foi obtida da API do [Open Prices](https://prices.openfoodfacts.org/), projeto do Open Food Facts. Primeiro foram selecionados produtos com ao menos uma observação de preço e nomes compatíveis com o catálogo; depois, 20 produtos brasileiros confundíveis foram adicionados como `NO_MATCH`. Os rótulos foram definidos olhando apenas o nome do produto, sem exibir sugestões do matcher. Os dados derivados do Open Food Facts são redistribuídos sob ODbL, com atribuição e share-alike.
 
+Os 60 positivos cobrem 24 canônicos, mas não de forma uniforme: `feijao_carioca` aparece 6 vezes; `arroz_integral`, `atum`, `farinha_trigo`, `iogurte_natural`, `manteiga`, `ovo` e `sardinha` aparecem 4 vezes cada. Dos 80 registros, 42 vêm de observações em BRL, 37 de observações em EUR e um não tem moeda registrada.
+
 ## Uso pretendido
 
 Benchmark educacional de entity matching, retrieval e calibração de abstenção. Não deve decidir compras, estoque ou informação nutricional sem revisão e dados reais do domínio.

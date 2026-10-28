@@ -14,5 +14,31 @@
     "EUR": 37,
     "BRL": 42,
     "UNKNOWN": 1
+  },
+  "positive_label_counts": {
+    "alho": 1,
+    "amendoim": 1,
+    "arroz_integral": 4,
+    "atum": 4,
+    "aveia": 3,
+    "azeitona_preta": 2,
+    "azeitona_verde": 1,
+    "canela": 1,
+    "cerveja": 1,
+    "champignon": 3,
+    "farinha_trigo": 4,
+    "feijao_carioca": 6,
+    "iogurte_natural": 4,
+    "leite_desnatado": 2,
+    "leite_integral": 2,
+    "linguica_toscana": 1,
+    "maionese": 3,
+    "manteiga": 4,
+    "milho": 1,
+    "oregano": 2,
+    "ovo": 4,
+    "pimenta_reino": 1,
+    "presunto": 1,
+    "sardinha": 4
   }
 }

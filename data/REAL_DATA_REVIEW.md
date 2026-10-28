@@ -2,6 +2,8 @@
 
 `open_prices_annotation.csv` is a reviewed evaluation slice made from product names that have at least one observation in the Open Food Facts **Open Prices API**. It contains 60 ingredient matches and 20 hard `NO_MATCH` examples. The positive rows cover 24 canonical IDs; 42 observations use BRL, 37 use EUR, and one legacy price has no currency recorded.
 
+The positive labels are concentrated rather than uniform: `feijao_carioca` appears 6 times; `arroz_integral`, `atum`, `farinha_trigo`, `iogurte_natural`, `manteiga`, `ovo`, and `sardinha` appear 4 times each. The remaining 16 represented IDs appear between 1 and 3 times. This composition must be reported with aggregate metrics because repeated categories have more influence on the score.
+
 The construction protocol avoids the failure mode where a supermarket sample is almost entirely `NO_MATCH`:
 
 1. Search Open Prices product records with at least one observed price for ingredient-like names.
