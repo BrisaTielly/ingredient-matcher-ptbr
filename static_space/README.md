@@ -11,7 +11,7 @@ models:
   - BrisaTielly/ingredient-matcher-ptbr-model
 datasets:
   - BrisaTielly/ingredient-matcher-ptbr
-short_description: Entity matching de ingredientes em português com abstenção calibrada.
+short_description: Entity matching de ingredientes em português.
 ---
 
 # Ingredient Matcher PT-BR
