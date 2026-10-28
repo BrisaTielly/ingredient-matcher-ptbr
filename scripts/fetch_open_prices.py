@@ -1,4 +1,4 @@
-"""Build a human-review queue from real Open Prices receipt descriptions."""
+"""Build an unlabelled screening pool from real Open Prices descriptions."""
 
 from __future__ import annotations
 
@@ -13,12 +13,10 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from ingredient_matcher.matchers import FuzzyMatcher
-
 SOURCE = "Open Food Facts Open Prices API"
 PRICES_API = "https://prices.openfoodfacts.org/api/v1/prices"
 USER_AGENT = "IngredientMatcherPTBR/0.2 (https://github.com/BrisaTielly/ingredient-matcher-ptbr)"
-DEFAULT_OUTPUT = Path("data/open_prices_annotation.csv")
+DEFAULT_OUTPUT = Path("data/open_prices_candidates.csv")
 
 
 def request_json(url: str, *, attempts: int = 5) -> dict[str, Any]:
@@ -51,7 +49,6 @@ def fetch_page(page: int, size: int = 100) -> dict[str, Any]:
 
 
 def annotation_rows(target: int) -> list[dict[str, Any]]:
-    matcher = FuzzyMatcher()
     annotations: list[dict[str, Any]] = []
     seen: set[str] = set()
     page = 1
@@ -67,16 +64,13 @@ def annotation_rows(target: int) -> list[dict[str, Any]]:
             if not raw_name or key in seen:
                 continue
             seen.add(key)
-            candidate = matcher.search(raw_name, top_k=1)[0]
             code = str(row.get("product_code") or product.get("code") or "").strip()
             annotations.append(
                 {
                     "raw_name": raw_name,
                     "canonical_id": "",
-                    "review_status": "needs_human_review",
-                    "suggested_canonical_id": candidate.canonical_id,
-                    "suggested_canonical_name": candidate.canonical_name,
-                    "suggested_score": f"{candidate.score:.6f}",
+                    "review_status": "needs_screening",
+                    "selection_group": "unfiltered_brl_pool",
                     "category_tag": row.get("category_tag")
                     or ",".join(product.get("categories_tags") or []),
                     "product_code": code,
@@ -115,14 +109,14 @@ def main() -> None:
         "retrieved_at": datetime.now(UTC).isoformat(),
         "license": "ODbL-1.0",
         "rows": len(rows),
-        "label_status": "needs_human_review",
+        "label_status": "needs_screening",
     }
     args.output.with_suffix(".metadata.json").write_text(
         json.dumps(metadata, indent=2) + "\n", encoding="utf-8"
     )
     print(
         f"Wrote {len(rows)} unique real descriptions to {args.output}; "
-        "labels still require human review."
+        "screen ingredient-like rows before labelling."
     )
 
 

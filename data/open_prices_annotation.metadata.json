@@ -1,12 +1,18 @@
 {
   "source": "Open Food Facts Open Prices API",
-  "source_url": "https://prices.openfoodfacts.org/api/v1/prices",
-  "query": {
-    "currency": "BRL",
-    "duplicate_of__isnull": true
-  },
-  "retrieved_at": "2026-10-28T01:53:13.701982+00:00",
+  "source_url": "https://prices.openfoodfacts.org/api/v1",
+  "retrieved_at": "2026-10-28T02:05:42.387799+00:00",
   "license": "ODbL-1.0",
-  "rows": 81,
-  "label_status": "needs_human_review"
+  "rows": 80,
+  "label_status": "reviewed",
+  "labeling_protocol": "Labels assigned from raw product_name only; automatic matcher suggestions were not displayed or retained.",
+  "selection_protocol": "60 ingredient-like products found in Open Prices product records with at least one observed price, plus 20 hard NO_MATCH products from Brazilian BRL observations.",
+  "match_rows": 60,
+  "no_match_rows": 20,
+  "distinct_positive_canonical_ids": 24,
+  "source_currencies": {
+    "EUR": 37,
+    "BRL": 42,
+    "UNKNOWN": 1
+  }
 }

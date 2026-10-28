@@ -36,9 +36,9 @@ O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e 
 
 ### Fatia externa em revisão
 
-`scripts/fetch_open_prices.py` prepara uma fila com as descrições brasileiras únicas disponíveis na API do Open Prices/Open Food Facts, com sugestões automáticas separadas do rótulo final. Essa fatia só entra no benchmark depois que todas as linhas forem revisadas por uma pessoa e passarem em `scripts/validate_real_labels.py`.
+`data/open_prices_annotation.csv` contém uma fatia externa revisada com 80 nomes que têm observações reais no Open Prices: 60 ingredientes que casam com o catálogo e 20 negativos difíceis. Os positivos cobrem 24 IDs canônicos. Todos os rótulos foram definidos olhando apenas `raw_name`; sugestões automáticas não foram exibidas nem mantidas no arquivo. `scripts/validate_real_labels.py` verifica a integridade da fatia.
 
-Depois da revisão, `scripts/evaluate_llm.py` compara duas estratégias: LLM direto sobre os 100 canônicos e E5 top-5 com LLM para reordenar. A saída registra tokens, latência, custo total e custo por mil itens. Ainda não há números publicados para esses métodos porque a fatia real não foi rotulada e nenhuma chamada paga foi executada.
+`scripts/fetch_open_prices.py` gera uma fila separada, sem rótulos e sem sugestões, para futuras expansões. `scripts/evaluate_llm.py` compara duas estratégias: LLM direto sobre os 100 canônicos e E5 top-5 com LLM para reordenar. A saída registra tokens, latência, custo total e custo por mil itens. Ainda não há números publicados para esses métodos porque nenhuma chamada paga foi executada.
 
 ## Métodos
 
