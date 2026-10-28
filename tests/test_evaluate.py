@@ -1,4 +1,9 @@
-from ingredient_matcher.evaluate import calibrate_threshold, metrics_at_threshold, predict_rows
+from ingredient_matcher.evaluate import (
+    bootstrap_intervals,
+    calibrate_threshold,
+    metrics_at_threshold,
+    predict_rows,
+)
 from ingredient_matcher.matchers import Candidate
 
 
@@ -29,3 +34,12 @@ def test_calibration_uses_scores_to_find_separating_threshold():
     threshold, metrics = calibrate_threshold(predictions)
     assert 0.2 < threshold <= 0.9
     assert metrics["accuracy"] == 1.0
+
+
+def test_bootstrap_intervals_are_deterministic_and_bounded():
+    predictions = predict_rows(StubMatcher(), rows())
+    first = bootstrap_intervals(predictions, 0.5, iterations=100, seed=7)
+    second = bootstrap_intervals(predictions, 0.5, iterations=100, seed=7)
+    assert first == second
+    assert first["f1"] == {"low": 1.0, "high": 1.0}
+    assert first["no_match_accuracy"] == {"low": 1.0, "high": 1.0}

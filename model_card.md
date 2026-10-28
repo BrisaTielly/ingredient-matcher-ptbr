@@ -29,7 +29,7 @@ Fine-tuning de `intfloat/multilingual-e5-small` para recuperar ingredientes can�
 
 Os números publicados no README do repositório são gerados por `python -m ingredient_matcher.evaluate` usando o mesmo catálogo e avaliador para RapidFuzz, E5 base e este modelo. O limiar de abstenção é calibrado na validação e congelado antes do teste.
 
-No teste de 66 exemplos, o modelo atingiu F1 0,975, top-1 accuracy 0,983, recall@5 1,000 e acurácia de `NO_MATCH` 1,000. O E5 base obteve F1 0,891 sob o mesmo protocolo.
+No teste sintético de 66 exemplos, o modelo atingiu F1 0,975 (IC bootstrap 95% [0,932; 1,000]), top-1 accuracy 0,983, recall@5 1,000 e acurácia de `NO_MATCH` 1,000. O E5 base obteve F1 0,891 (IC 95% [0,821; 0,950]) sob o mesmo protocolo. Os intervalos se sobrepõem; a amostra pequena não sustenta uma conclusão forte de superioridade.
 
 ## Uso
 
