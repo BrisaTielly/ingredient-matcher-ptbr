@@ -29,4 +29,15 @@ jobs:
           --candidate .ci-results/metrics.json
           --method RapidFuzz
           --method 'E5 fine-tuned'
+      - name: Evaluate reviewed Open Prices slice
+        run: >-
+          python scripts/evaluate_real.py
+          --methods fuzzy,fine_tuned
+          --fine-tuned-model BrisaTielly/ingredient-matcher-ptbr-model
+          --results-dir .ci-real-results
+      - name: Upload real-data evaluation
+        uses: actions/upload-artifact@v4
+        with:
+          name: real-open-prices-evaluation
+          path: .ci-real-results
       - run: ruff check .
