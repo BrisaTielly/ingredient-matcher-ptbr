@@ -6,11 +6,25 @@ Entity matching de descrições ruidosas de compras e notas fiscais para um cat�
 
 `QJ MUSS FAT PCT 1KG` → `queijo_mussarela`
 
+## Resultado principal: dados reais
+
+A avaliação externa usa 80 nomes observados no Open Prices: 60 produtos que casam com o catálogo e 20 negativos difíceis. O limiar de cada método foi calibrado apenas na validação sintética e aplicado sem ajuste à fatia real.
+
+| Método | F1 (IC95%) | Precisão | Recall | Top-1 | Recall@5 | `NO_MATCH` | Cobertura |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| RapidFuzz | 0,605 [0,492–0,708] | 0,565 | 0,650 | 0,650 | 0,817 | 0,250 | 0,863 |
+| E5 base | 0,818 [0,741–0,885] | 0,750 | **0,900** | 0,900 | **1,000** | 0,400 | 0,900 |
+| **E5 fine-tuned** | **0,874 [0,810–0,931]** | **0,881** | 0,867 | **0,950** | **1,000** | **0,700** | 0,738 |
+
+O fine-tuning elevou a estimativa pontual de F1 em 0,056 sobre o E5 base e melhorou top-1 e rejeição de `NO_MATCH`, com menor recall e cobertura. Os intervalos se sobrepõem; a amostra ainda não sustenta uma conclusão forte de superioridade.
+
+A composição é concentrada: os 60 positivos cobrem 24 canônicos; `feijao_carioca` aparece 6 vezes e sete IDs aparecem 4 vezes cada (`arroz_integral`, `atum`, `farinha_trigo`, `iogurte_natural`, `manteiga`, `ovo` e `sardinha`). Das 80 observações, 42 usam BRL, 37 usam EUR e uma não registra moeda. Portanto, o resultado mede esta fatia selecionada e não a frequência natural das compras de restaurantes.
+
 ## Por que
 
 Restaurantes recebem o mesmo insumo com abreviações, marcas, unidades e descrições diferentes. Sem resolver essas identidades, custos, estoque e informação nutricional ficam fragmentados. Este projeto compara uma regra lexical, um retriever multilíngue pronto e o mesmo retriever após fine-tuning.
 
-## Resultados
+## Benchmark sintético controlado
 
 Os resultados abaixo são gerados por `make eval`. O limiar de abstenção é calibrado somente na validação; o teste contém ingredientes que não aparecem no fine-tuning.
 
@@ -38,12 +52,7 @@ O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e 
 
 `data/open_prices_annotation.csv` contém uma fatia externa revisada com 80 nomes que têm observações reais no Open Prices: 60 ingredientes que casam com o catálogo e 20 negativos difíceis. Os positivos cobrem 24 IDs canônicos. Todos os rótulos foram definidos olhando apenas `raw_name`; sugestões automáticas não foram exibidas nem mantidas no arquivo. `scripts/validate_real_labels.py` verifica a integridade da fatia.
 
-| Método | F1 (IC95%) | Top-1 | Recall@5 | NO_MATCH | Cobertura |
-|---|---:|---:|---:|---:|---:|
-| RapidFuzz | 0,605 [0,492–0,708] | 0,650 | 0,817 | 0,250 | 0,863 |
-| E5 fine-tuned | **0,874 [0,810–0,931]** | **0,950** | **1,000** | **0,700** | 0,738 |
-
-Os limiares continuam sendo calibrados apenas na validação sintética. A seleção intencional de 60 matches evita uma avaliação dominada por negativos, mas significa que essa fatia não estima a frequência natural dos produtos em compras de restaurantes.
+Os 60 positivos cobrem 24 canônicos de forma concentrada, e 37 dos 80 registros vêm de observações em EUR. A seleção intencional evita uma avaliação dominada por negativos, mas não estima a frequência natural dos produtos em compras de restaurantes. A distribuição completa está em `data/open_prices_annotation.metadata.json`.
 
 `scripts/fetch_open_prices.py` gera uma fila separada, sem rótulos e sem sugestões, para futuras expansões. `scripts/evaluate_llm.py` compara duas estratégias: LLM direto sobre os 100 canônicos e E5 top-5 com LLM para reordenar. A saída registra tokens, latência, custo total e custo por mil itens. Ainda não há números publicados para esses métodos porque nenhuma chamada paga foi executada.
 
