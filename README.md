@@ -34,9 +34,16 @@ O fine-tuning aumentou a estimativa pontual de F1 em 0,084 sobre o E5 base, mant
 
 O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e ruído, não desempenho de produção.
 
-### Fatia externa em revisão
+### Fatia externa revisada
 
 `data/open_prices_annotation.csv` contém uma fatia externa revisada com 80 nomes que têm observações reais no Open Prices: 60 ingredientes que casam com o catálogo e 20 negativos difíceis. Os positivos cobrem 24 IDs canônicos. Todos os rótulos foram definidos olhando apenas `raw_name`; sugestões automáticas não foram exibidas nem mantidas no arquivo. `scripts/validate_real_labels.py` verifica a integridade da fatia.
+
+| Método | F1 (IC95%) | Top-1 | Recall@5 | NO_MATCH | Cobertura |
+|---|---:|---:|---:|---:|---:|
+| RapidFuzz | 0,605 [0,492–0,708] | 0,650 | 0,817 | 0,250 | 0,863 |
+| E5 fine-tuned | **0,874 [0,810–0,931]** | **0,950** | **1,000** | **0,700** | 0,738 |
+
+Os limiares continuam sendo calibrados apenas na validação sintética. A seleção intencional de 60 matches evita uma avaliação dominada por negativos, mas significa que essa fatia não estima a frequência natural dos produtos em compras de restaurantes.
 
 `scripts/fetch_open_prices.py` gera uma fila separada, sem rótulos e sem sugestões, para futuras expansões. `scripts/evaluate_llm.py` compara duas estratégias: LLM direto sobre os 100 canônicos e E5 top-5 com LLM para reordenar. A saída registra tokens, latência, custo total e custo por mil itens. Ainda não há números publicados para esses métodos porque nenhuma chamada paga foi executada.
 
