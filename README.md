@@ -1,15 +1,3 @@
----
-title: Ingredient Matcher PT-BR
-emoji: 🧾
-colorFrom: red
-colorTo: yellow
-sdk: gradio
-sdk_version: 6.30.0
-app_file: app.py
-pinned: false
-license: mit
----
-
 # Ingredient Matcher PT-BR
 
 Entity matching de descrições ruidosas de compras e notas fiscais para um catálogo de ingredientes em português.

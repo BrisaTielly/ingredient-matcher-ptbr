@@ -36,7 +36,6 @@ def main() -> None:
     api.create_repo(space_id, repo_type="space", space_sdk="gradio", private=args.private, exist_ok=True)
     allow = [
         "app.py",
-        "README.md",
         "LICENSE",
         "pyproject.toml",
         "requirements.txt",
@@ -45,6 +44,12 @@ def main() -> None:
         "src/ingredient_matcher/*.py",
     ]
     api.upload_folder(folder_path=ROOT, repo_id=space_id, repo_type="space", allow_patterns=allow)
+    api.upload_file(
+        path_or_fileobj=ROOT / "space_README.md",
+        path_in_repo="README.md",
+        repo_id=space_id,
+        repo_type="space",
+    )
 
     print(f"dataset: https://huggingface.co/datasets/{dataset_id}")
     print(f"model: https://huggingface.co/{model_id}")
