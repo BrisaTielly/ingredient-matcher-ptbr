@@ -42,6 +42,10 @@ O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e 
 
 Todos recuperam top-5 no mesmo catálogo. O score top-1 precisa superar um limiar calibrado na validação; caso contrário, a resposta é `revisar`.
 
+## Demo
+
+O Space gratuito executa uma busca lexical no navegador para demonstrar o fluxo de match e abstenção. O E5 fine-tuned está publicado separadamente no Hub; seu resultado vem do benchmark reproduzível deste repositório. A aplicação Gradio completa continua disponível localmente com `make app`.
+
 ## Reproduzir
 
 ```bash

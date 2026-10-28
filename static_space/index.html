@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Entity matching de descrições ruidosas de ingredientes em português." />
+    <title>Ingredient Matcher PT-BR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ingredient Matcher PT-BR">
+        <span class="brand-mark">IM</span>
+        <span>Ingredient Matcher <b>PT-BR</b></span>
+      </a>
+      <nav aria-label="Links do projeto">
+        <a href="https://github.com/BrisaTielly/ingredient-matcher-ptbr" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://huggingface.co/BrisaTielly/ingredient-matcher-ptbr-model" target="_blank" rel="noreferrer">Modelo</a>
+        <a href="https://huggingface.co/datasets/BrisaTielly/ingredient-matcher-ptbr" target="_blank" rel="noreferrer">Dataset</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">ENTITY MATCHING · PORTUGUÊS</p>
+          <h1>Do ruído do fornecedor ao ingrediente certo.</h1>
+          <p class="lede">Um retriever multilíngue ajustado para ligar abreviações de compras e notas fiscais a um catálogo canônico — com abstenção quando a confiança não basta.</p>
+          <div class="proof" aria-label="Resumo do benchmark">
+            <div><strong>0,975</strong><span>F1 no teste</span></div>
+            <div><strong>0,983</strong><span>Top-1</span></div>
+            <div><strong>1,000</strong><span>Recall@5</span></div>
+          </div>
+        </div>
+
+        <section class="matcher" aria-labelledby="matcher-title">
+          <div class="matcher-head">
+            <div>
+              <p class="eyebrow">DEMO NO NAVEGADOR</p>
+              <h2 id="matcher-title">Teste uma descrição</h2>
+            </div>
+            <span class="status">100 canônicos</span>
+          </div>
+          <form id="matcher-form">
+            <label for="query">Descrição do fornecedor</label>
+            <div class="input-row">
+              <input id="query" name="query" autocomplete="off" value="QJ MUSS FAT PCT 1KG" />
+              <button type="submit">Encontrar</button>
+            </div>
+          </form>
+          <div class="examples" aria-label="Exemplos">
+            <button type="button" data-query="QJ MUSS FAT PCT 1KG">Queijo abreviado</button>
+            <button type="button" data-query="TOM ITALIANO CX 12UN">Tomate em caixa</button>
+            <button type="button" data-query="DETERGENTE NEUTRO 5L">Fora do catálogo</button>
+          </div>
+          <div id="decision" class="decision" aria-live="polite"></div>
+          <ol id="results" class="results"></ol>
+          <p class="demo-note">Esta demo gratuita executa uma busca lexical local. O modelo E5 fine-tuned e seu benchmark completo estão nos links acima.</p>
+        </section>
+      </section>
+
+      <section class="benchmark" aria-labelledby="benchmark-title">
+        <div class="section-copy">
+          <p class="eyebrow">BENCHMARK REPRODUZÍVEL</p>
+          <h2 id="benchmark-title">O fine-tuning melhora o match e aprende a recusar.</h2>
+          <p>Teste com 66 exemplos, ingredientes separados por grupo e limiar calibrado somente na validação. Os dados são sintéticos e versionados.</p>
+        </div>
+        <div class="metric-table" role="table" aria-label="Comparação dos métodos">
+          <div class="metric-row metric-head" role="row"><span>Método</span><span>F1</span><span>Top-1</span><span>NO_MATCH</span></div>
+          <div class="metric-row" role="row"><span>RapidFuzz</span><span>0,900</span><span>0,933</span><span>0,667</span></div>
+          <div class="metric-row" role="row"><span>E5 base</span><span>0,891</span><span>0,933</span><span>0,500</span></div>
+          <div class="metric-row winner" role="row"><span>E5 fine-tuned</span><span>0,975</span><span>0,983</span><span>1,000</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Brisa Silva · 2026</span>
+      <span>Python · Sentence Transformers · Hugging Face</span>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

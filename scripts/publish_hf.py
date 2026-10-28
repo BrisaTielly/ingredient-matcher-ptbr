@@ -33,23 +33,8 @@ def main() -> None:
     api.upload_folder(folder_path=ROOT / "artifacts" / "model", repo_id=model_id, repo_type="model")
     api.upload_file(path_or_fileobj=ROOT / "model_card.md", path_in_repo="README.md", repo_id=model_id, repo_type="model")
 
-    api.create_repo(space_id, repo_type="space", space_sdk="gradio", private=args.private, exist_ok=True)
-    allow = [
-        "app.py",
-        "LICENSE",
-        "pyproject.toml",
-        "requirements.txt",
-        "data/canonicals.csv",
-        "results/metrics.json",
-        "src/ingredient_matcher/*.py",
-    ]
-    api.upload_folder(folder_path=ROOT, repo_id=space_id, repo_type="space", allow_patterns=allow)
-    api.upload_file(
-        path_or_fileobj=ROOT / "space_README.md",
-        path_in_repo="README.md",
-        repo_id=space_id,
-        repo_type="space",
-    )
+    api.create_repo(space_id, repo_type="space", space_sdk="static", private=args.private, exist_ok=True)
+    api.upload_folder(folder_path=ROOT / "static_space", repo_id=space_id, repo_type="space")
 
     print(f"dataset: https://huggingface.co/datasets/{dataset_id}")
     print(f"model: https://huggingface.co/{model_id}")
