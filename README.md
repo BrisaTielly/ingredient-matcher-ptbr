@@ -15,13 +15,13 @@ Restaurantes recebem o mesmo insumo com abreviações, marcas, unidades e descri
 Os resultados abaixo são gerados por `make eval`. O limiar de abstenção é calibrado somente na validação; o teste contém ingredientes que não aparecem no fine-tuning.
 
 <!-- RESULTS_START -->
-| Método | F1 | Precisão | Recall | Top-1 | Recall@5 | `NO_MATCH` | Coverage |
+| Método | F1 (IC 95%) | Precisão | Recall | Top-1 | Recall@5 | `NO_MATCH` | Coverage |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| RapidFuzz | 0,900 | 0,900 | 0,900 | 0,933 | 1,000 | 0,667 | 0,909 |
-| E5 base | 0,891 | 0,898 | 0,883 | 0,933 | 1,000 | 0,500 | 0,894 |
-| **E5 fine-tuned** | **0,975** | **0,983** | **0,967** | **0,983** | **1,000** | **1,000** | **0,894** |
+| RapidFuzz | 0,900 [0,826; 0,959] | 0,900 | 0,900 | 0,933 | 1,000 | 0,667 | 0,909 |
+| E5 base | 0,891 [0,821; 0,950] | 0,898 | 0,883 | 0,933 | 1,000 | 0,500 | 0,894 |
+| **E5 fine-tuned** | **0,975 [0,932; 1,000]** | **0,983** | **0,967** | **0,983** | **1,000** | **1,000** | **0,894** |
 
-O fine-tuning aumentou o F1 em 0,084 ponto absoluto sobre o E5 base, mantendo todos os canônicos corretos no top-5. Os números vêm de 66 exemplos de teste: 60 matches e 6 itens fora do catálogo.
+O fine-tuning aumentou a estimativa pontual de F1 em 0,084 sobre o E5 base, mantendo todos os canônicos corretos no top-5. Os intervalos bootstrap se sobrepõem: com 66 exemplos de teste, a evidência ainda não sustenta uma conclusão forte de superioridade. A estratificação preserva 60 matches e 6 itens fora do catálogo em 2.000 reamostragens.
 <!-- RESULTS_END -->
 
 ## Dataset
@@ -33,6 +33,10 @@ O fine-tuning aumentou o F1 em 0,084 ponto absoluto sobre o E5 base, mantendo to
 - Marcas fictícias e nenhum dado privado ou corporativo.
 
 O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e ruído, não desempenho de produção.
+
+### Fatia externa em revisão
+
+`scripts/fetch_open_prices.py` prepara uma fila de 100 descrições reais do Open Prices/Open Food Facts, com sugestões automáticas separadas do rótulo final. Essa fatia só entra no benchmark depois que todas as linhas forem revisadas por uma pessoa e passarem em `scripts/validate_real_labels.py`.
 
 ## Métodos
 
@@ -58,6 +62,8 @@ make train
 make eval
 make app
 ```
+
+O CI reavalia RapidFuzz e o E5 publicado em uma pasta isolada. `scripts/check_regression.py` compara F1 e top-1 com `results/metrics.json` e quebra o build quando a queda passa de 0,01.
 
 ## Avaliação
 

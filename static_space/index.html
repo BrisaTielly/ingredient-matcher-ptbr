@@ -27,7 +27,7 @@
           <h1>Do ruído do fornecedor ao ingrediente certo.</h1>
           <p class="lede">Um retriever multilíngue ajustado para ligar abreviações de compras e notas fiscais a um catálogo canônico — com abstenção quando a confiança não basta.</p>
           <div class="proof" aria-label="Resumo do benchmark">
-            <div><strong>0,975</strong><span>F1 no teste</span></div>
+            <div><strong>0,975</strong><span>F1 · IC95% 0,932–1,000</span></div>
             <div><strong>0,983</strong><span>Top-1</span></div>
             <div><strong>1,000</strong><span>Recall@5</span></div>
           </div>
@@ -63,13 +63,13 @@
         <div class="section-copy">
           <p class="eyebrow">BENCHMARK REPRODUZÍVEL</p>
           <h2 id="benchmark-title">O fine-tuning melhora o match e aprende a recusar.</h2>
-          <p>Teste com 66 exemplos, ingredientes separados por grupo e limiar calibrado somente na validação. Os dados são sintéticos e versionados.</p>
+          <p>Teste sintético com 66 exemplos, ingredientes separados por grupo e limiar calibrado somente na validação. Os intervalos bootstrap mostram a incerteza da amostra pequena.</p>
         </div>
         <div class="metric-table" role="table" aria-label="Comparação dos métodos">
-          <div class="metric-row metric-head" role="row"><span>Método</span><span>F1</span><span>Top-1</span><span>NO_MATCH</span></div>
-          <div class="metric-row" role="row"><span>RapidFuzz</span><span>0,900</span><span>0,933</span><span>0,667</span></div>
-          <div class="metric-row" role="row"><span>E5 base</span><span>0,891</span><span>0,933</span><span>0,500</span></div>
-          <div class="metric-row winner" role="row"><span>E5 fine-tuned</span><span>0,975</span><span>0,983</span><span>1,000</span></div>
+          <div class="metric-row metric-head" role="row"><span>Método</span><span>F1 · IC95%</span><span>Top-1</span><span>NO_MATCH</span></div>
+          <div class="metric-row" role="row"><span>RapidFuzz</span><span>0,900 · 0,826–0,959</span><span>0,933</span><span>0,667</span></div>
+          <div class="metric-row" role="row"><span>E5 base</span><span>0,891 · 0,821–0,950</span><span>0,933</span><span>0,500</span></div>
+          <div class="metric-row winner" role="row"><span>E5 fine-tuned</span><span>0,975 · 0,932–1,000</span><span>0,983</span><span>1,000</span></div>
         </div>
       </section>
     </main>
