@@ -1,4 +1,0 @@
-[console_scripts]
-ingredient-data = ingredient_matcher.data:main
-ingredient-eval = ingredient_matcher.evaluate:main
-ingredient-train = ingredient_matcher.train:main
