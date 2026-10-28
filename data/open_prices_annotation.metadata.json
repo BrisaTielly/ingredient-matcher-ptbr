@@ -1,0 +1,12 @@
+{
+  "source": "Open Food Facts Open Prices API",
+  "source_url": "https://prices.openfoodfacts.org/api/v1/prices",
+  "query": {
+    "currency": "BRL",
+    "duplicate_of__isnull": true
+  },
+  "retrieved_at": "2026-10-28T01:53:13.701982+00:00",
+  "license": "ODbL-1.0",
+  "rows": 81,
+  "label_status": "needs_human_review"
+}

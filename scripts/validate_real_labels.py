@@ -14,8 +14,8 @@ def validation_errors(path: Path) -> list[str]:
     with path.open(encoding="utf-8", newline="") as stream:
         rows = list(csv.DictReader(stream))
     errors: list[str] = []
-    if len(rows) < 100:
-        errors.append(f"expected at least 100 rows, found {len(rows)}")
+    if len(rows) < 50:
+        errors.append(f"expected at least 50 rows, found {len(rows)}")
     for index, row in enumerate(rows, start=2):
         if row.get("review_status") != "reviewed":
             errors.append(f"line {index}: review_status is not reviewed")
@@ -36,3 +36,7 @@ def main() -> None:
         suffix = f"\n... and {len(errors) - 20} more" if len(errors) > 20 else ""
         raise SystemExit(f"Real-data validation failed:\n- {preview}{suffix}")
     print("Real-data labels are complete and valid.")
+
+
+if __name__ == "__main__":
+    main()

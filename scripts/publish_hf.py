@@ -26,6 +26,12 @@ def main() -> None:
         (ROOT / "dataset_card.md", "README.md"),
         (ROOT / "data" / "dataset.csv", "dataset.csv"),
         (ROOT / "data" / "canonicals.csv", "canonicals.csv"),
+        (ROOT / "data" / "open_prices_annotation.csv", "open_prices_annotation.csv"),
+        (
+            ROOT / "data" / "open_prices_annotation.metadata.json",
+            "open_prices_annotation.metadata.json",
+        ),
+        (ROOT / "data" / "REAL_DATA_REVIEW.md", "REAL_DATA_REVIEW.md"),
     ]:
         api.upload_file(path_or_fileobj=source, path_in_repo=destination, repo_id=dataset_id, repo_type="dataset")
 
