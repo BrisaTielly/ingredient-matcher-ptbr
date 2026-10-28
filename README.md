@@ -38,6 +38,8 @@ O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e 
 
 `scripts/fetch_open_prices.py` prepara uma fila de 100 descrições reais do Open Prices/Open Food Facts, com sugestões automáticas separadas do rótulo final. Essa fatia só entra no benchmark depois que todas as linhas forem revisadas por uma pessoa e passarem em `scripts/validate_real_labels.py`.
 
+Depois da revisão, `scripts/evaluate_llm.py` compara duas estratégias: LLM direto sobre os 100 canônicos e E5 top-5 com LLM para reordenar. A saída registra tokens, latência, custo total e custo por mil itens. Ainda não há números publicados para esses métodos porque a fatia real não foi rotulada e nenhuma chamada paga foi executada.
+
 ## Métodos
 
 1. **RapidFuzz:** `WRatio` após normalização compartilhada.
