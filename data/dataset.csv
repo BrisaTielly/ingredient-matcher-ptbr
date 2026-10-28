@@ -1,0 +1,331 @@
+example_id,raw_name,canonical_id,canonical_name,category,transformation,source_group,split,label_source
+0082cef2bf79,SACOLA KRAFT MEDIA,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_8de4e17c,test,human_authored
+07a3e2b72c48,"LINGUICA CALABRESA PREMIUM SABOR REAL 2,5KG",calabresa,Linguiça calabresa,proteinas,brand_noise,calabresa,test,synthetic_rule
+09bb13f3cfc7,PIME VERD 500G,pimentao_verde,Pimentão verde,hortifruti,invoice_abbreviation,pimentao_verde,test,synthetic_rule
+09cbbabafc04,LING CALA PCT 1KG,calabresa,Linguiça calabresa,proteinas,invoice_abbreviation,calabresa,test,synthetic_rule
+0f22c456bfe7,ATUM EM CONSERVA TRADICIONAL VILA SUL 1KG,atum,Atum em conserva,proteinas,brand_noise,atum,test,synthetic_rule
+0f3e6adaba66,"SARDINHA EM CONSERVA PREMIUM SABOR REAL 2,5KG",sardinha,Sardinha em conserva,proteinas,brand_noise,sardinha,test,synthetic_rule
+12494faed89a,CAMA CX 12UN,camarao,Camarão,proteinas,invoice_abbreviation,camarao,test,synthetic_rule
+189c35904bf3,"IOGU NATU 2,5KG",iogurte_natural,Iogurte natural,laticinios,invoice_abbreviation,iogurte_natural,test,synthetic_rule
+1c2343556654,"CANE EM PO 2,5KG",canela,Canela em pó,temperos,invoice_abbreviation,canela,test,synthetic_rule
+1d4bbbb440df,MEL FOOD SERVICE CAMPO VERDE 500G,mel,Mel,mercearia,brand_noise,mel,test,synthetic_rule
+267c361f0122,"MACA PARA 2,5KG",macarrao_parafuso,Macarrão parafuso,mercearia,invoice_abbreviation,macarrao_parafuso,test,synthetic_rule
+26b0f5d1d046,CAMARAO TRADICIONAL VILA SUL 1KG,camarao,Camarão,proteinas,brand_noise,camarao,test,synthetic_rule
+326e4efc964d,POLPA DE TOMATE TRADICIONAL VILA SUL 1KG,polpa_tomate,Polpa de tomate,mercearia,brand_noise,polpa_tomate,test,synthetic_rule
+33722b66c383,CASTANHA DE CAJU TIPO A CASA NOVA CX 12UN,castanha_caju,Castanha de caju,mercearia,brand_noise,castanha_caju,test,synthetic_rule
+396ca8ff5265,SARDINHA EM CONSERVA CX 12UN,sardinha,Sardinha em conserva,proteinas,ocr_noise,sardinha,test,synthetic_rule
+3b8f73d56561,MEL 1KG,mel,Mel,mercearia,ocr_noise,mel,test,synthetic_rule
+3edfbcf8744b,CAST CAJU 500G,castanha_caju,Castanha de caju,mercearia,invoice_abbreviation,castanha_caju,test,synthetic_rule
+3efd146fc29b,AVEIA  EM FLOCOS 1KG,aveia,Aveia em flocos,mercearia,ocr_noise,aveia,test,synthetic_rule
+3fa5d49de043,REPOLHO VERDE FOOD SERVICE CAMPO VERDE 500G,repolho,Repolho verde,hortifruti,brand_noise,repolho,test,synthetic_rule
+3fbb98681aa0,PAPRICA EM PO PCT 1KG,paprica,Páprica em pó,temperos,ocr_noise,paprica,test,synthetic_rule
+4106b162365a,AGUA  DE COCO 1KG,agua_coco,Água de coco,bebidas,ocr_noise,agua_coco,test,synthetic_rule
+449ad0de2b8e,EDUL CULI CX 12UN,adocante,Edulcorante culinário,mercearia,invoice_abbreviation,adocante,test,synthetic_rule
+451092383ad5,CANELA EM PO FOOD SERVICE CAMPO VERDE 500G,canela,Canela em pó,temperos,brand_noise,canela,test,synthetic_rule
+4534eee0d0ce,"AZEITONA VERDE PREMIUM SABOR REAL 2,5KG",azeitona_verde,Azeitona verde,mercearia,brand_noise,azeitona_verde,test,synthetic_rule
+479c9318f392,AVEIA EM FLOCOS FOOD SERVICE CAMPO VERDE 500G,aveia,Aveia em flocos,mercearia,brand_noise,aveia,test,synthetic_rule
+48fd89158bfd,"AGUA COCO 2,5KG",agua_coco,Água de coco,bebidas,invoice_abbreviation,agua_coco,test,synthetic_rule
+4b1f8dc00a92,"POLPA  DE TOMATE 2,5KG",polpa_tomate,Polpa de tomate,mercearia,ocr_noise,polpa_tomate,test,synthetic_rule
+4fe3ce0198a2,EDULCORANTE CULINARIO TRADICIONAL VILA SUL 1KG,adocante,Edulcorante culinário,mercearia,brand_noise,adocante,test,synthetic_rule
+529d7b4af11f,MACARRAO  PARAFUSO 1KG,macarrao_parafuso,Macarrão parafuso,mercearia,ocr_noise,macarrao_parafuso,test,synthetic_rule
+596a035f81d8,"CAMARAO 2,5KG",camarao,Camarão,proteinas,ocr_noise,camarao,test,synthetic_rule
+5a7bbbccb5ba,ARRO BRAN 500G,arroz_branco,Arroz branco,mercearia,invoice_abbreviation,arroz_branco,test,synthetic_rule
+5af5a23fe6a4,TAMPA COPO 300ML,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_8b053035,test,human_authored
+626038b5a077,LINGUICA CALABRESA CX 12UN,calabresa,Linguiça calabresa,proteinas,ocr_noise,calabresa,test,synthetic_rule
+6b3a184b16af,MOLH MOST 1KG,mostarda,Molho de mostarda,temperos,invoice_abbreviation,mostarda,test,synthetic_rule
+6bff6101b8c3,"EDULCORANTE CULINARIO 2,5KG",adocante,Edulcorante culinário,mercearia,ocr_noise,adocante,test,synthetic_rule
+6e8d675674ef,CERVEJA RESF SERRA BOA PCT 1KG,cerveja,Cerveja,bebidas,brand_noise,cerveja,test,synthetic_rule
+7165b70ac30e,PIMENTAO  VERDE PCT 1KG,pimentao_verde,Pimentão verde,hortifruti,ocr_noise,pimentao_verde,test,synthetic_rule
+77c281fe4897,"REPO VERD 2,5KG",repolho,Repolho verde,hortifruti,invoice_abbreviation,repolho,test,synthetic_rule
+7ab0d663d287,"MEL 2,5KG",mel,Mel,mercearia,invoice_abbreviation,mel,test,synthetic_rule
+7cb94deddd9f,SARD EM CONS PCT 1KG,sardinha,Sardinha em conserva,proteinas,invoice_abbreviation,sardinha,test,synthetic_rule
+89b6bb8f3bc1,COPO DESCARTAVEL 300ML,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_e488439d,test,human_authored
+89d8203f4ef0,POLP TOM CX 12UN,polpa_tomate,Polpa de tomate,mercearia,invoice_abbreviation,polpa_tomate,test,synthetic_rule
+8c4ed29e64f7,"AVEI EM FLOC 2,5KG",aveia,Aveia em flocos,mercearia,invoice_abbreviation,aveia,test,synthetic_rule
+8cf619cf11ed,GUARDANAPO FOLHA DUPLA,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_a940bb49,test,human_authored
+903549923b6f,"ATUM EM CONSERVA 2,5KG",atum,Atum em conserva,proteinas,ocr_noise,atum,test,synthetic_rule
+957fd662e356,ARROZ BRANCO PCT 1KG,arroz_branco,Arroz branco,mercearia,ocr_noise,arroz_branco,test,synthetic_rule
+9701226932e4,ARROZ BRANCO TIPO A CASA NOVA CX 12UN,arroz_branco,Arroz branco,mercearia,brand_noise,arroz_branco,test,synthetic_rule
+998e6114dd28,IOGURTE  NATURAL 1KG,iogurte_natural,Iogurte natural,laticinios,ocr_noise,iogurte_natural,test,synthetic_rule
+9c1a5022e3b3,AGUA DE COCO FOOD SERVICE CAMPO VERDE 500G,agua_coco,Água de coco,bebidas,brand_noise,agua_coco,test,synthetic_rule
+9e86ec15ebae,MACARRAO PARAFUSO FOOD SERVICE CAMPO VERDE 500G,macarrao_parafuso,Macarrão parafuso,mercearia,brand_noise,macarrao_parafuso,test,synthetic_rule
+9ec403ce6502,PAPRICA EM PO TIPO A CASA NOVA CX 12UN,paprica,Páprica em pó,temperos,brand_noise,paprica,test,synthetic_rule
+a92387983f8c,REPOLHO  VERDE 1KG,repolho,Repolho verde,hortifruti,ocr_noise,repolho,test,synthetic_rule
+ab1e5ed0d6b3,CANELA EM PO 1KG,canela,Canela em pó,temperos,ocr_noise,canela,test,synthetic_rule
+ab81d48017d1,PAPR EM PO 500G,paprica,Páprica em pó,temperos,invoice_abbreviation,paprica,test,synthetic_rule
+af803da85aea,MOLHO DE MOSTARDA RESF SERRA BOA PCT 1KG,mostarda,Molho de mostarda,temperos,brand_noise,mostarda,test,synthetic_rule
+b7c534682757,CERV 1KG,cerveja,Cerveja,bebidas,invoice_abbreviation,cerveja,test,synthetic_rule
+ba15260d4dcd,AZEI VERD PCT 1KG,azeitona_verde,Azeitona verde,mercearia,invoice_abbreviation,azeitona_verde,test,synthetic_rule
+bc06a028d96d,ATUM EM CONS CX 12UN,atum,Atum em conserva,proteinas,invoice_abbreviation,atum,test,synthetic_rule
+c78464d4526e,CERVEJA 500G,cerveja,Cerveja,bebidas,ocr_noise,cerveja,test,synthetic_rule
+e84a02200f1c,IOGURTE NATURAL FOOD SERVICE CAMPO VERDE 500G,iogurte_natural,Iogurte natural,laticinios,brand_noise,iogurte_natural,test,synthetic_rule
+f02da6b02d0e,CASTANHA DE CAJU PCT 1KG,castanha_caju,Castanha de caju,mercearia,ocr_noise,castanha_caju,test,synthetic_rule
+f3b2237db226,TOUCA DESCARTAVEL PCT,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_f11ac88b,test,human_authored
+f4bf7174931d,AZEITONA VERDE CX 12UN,azeitona_verde,Azeitona verde,mercearia,ocr_noise,azeitona_verde,test,synthetic_rule
+f857063a3c69,BOBINA TERMICA 80MM,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_60f373c7,test,human_authored
+fa60898a9aa1,MOLHO DE MOSTARDA 500G,mostarda,Molho de mostarda,temperos,ocr_noise,mostarda,test,synthetic_rule
+fbb7ebd6a305,PIMENTAO VERDE TIPO A CASA NOVA CX 12UN,pimentao_verde,Pimentão verde,hortifruti,brand_noise,pimentao_verde,test,synthetic_rule
+005fbb302528,AVENTAL DESCARTAVEL,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_a7b52438,train,human_authored
+008890ab4efb,PIME CALA CX 12UN,pimenta_calabresa,Pimenta calabresa,temperos,invoice_abbreviation,pimenta_calabresa,train,synthetic_rule
+013c78a57be9,OREG SECO CX 12UN,oregano,Orégano seco,temperos,invoice_abbreviation,oregano,train,synthetic_rule
+014a9fe48d97,BAT DOCE 1KG,batata_doce,Batata-doce,hortifruti,invoice_abbreviation,batata_doce,train,synthetic_rule
+02f18b44ad25,BACON TRADICIONAL VILA SUL 1KG,bacon,Bacon,proteinas,brand_noise,bacon,train,synthetic_rule
+04d538ab6017,LEITE  DE COCO PCT 1KG,leite_coco,Leite de coco,mercearia,ocr_noise,leite_coco,train,synthetic_rule
+051bd1da6838,COGUMELO  CHAMPIGNON PCT 1KG,champignon,Cogumelo champignon,hortifruti,ocr_noise,champignon,train,synthetic_rule
+0535a1a8a6ff,"AMID MILH 2,5KG",amido_milho,Amido de milho,mercearia,invoice_abbreviation,amido_milho,train,synthetic_rule
+072ffe3787b2,PIMENTAO AMARELO 500G,pimentao_amarelo,Pimentão amarelo,hortifruti,ocr_noise,pimentao_amarelo,train,synthetic_rule
+0b64983f6687,VINAGRE DE ALCOOL FOOD SERVICE CAMPO VERDE 500G,vinagre,Vinagre de álcool,temperos,brand_noise,vinagre,train,synthetic_rule
+0cf8b9050dcb,LEITE DESNATADO TRADICIONAL VILA SUL 1KG,leite_desnatado,Leite desnatado,laticinios,brand_noise,leite_desnatado,train,synthetic_rule
+0f13d0104d4f,OLEO DE GIRASSOL TIPO A CASA NOVA CX 12UN,oleo_girassol,Óleo de girassol,oleos,brand_noise,oleo_girassol,train,synthetic_rule
+0f5a76fbdfbf,ALCOOL GEL 70 5L,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_824b4bc8,train,human_authored
+1105d61e2ac6,BALDE PLASTICO 20L,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_3bdcb678,train,human_authored
+143d109a737c,MELANCIA 500G,melancia,Melancia,hortifruti,ocr_noise,melancia,train,synthetic_rule
+152423549dfb,FILE PTO FR 1KG,file_frango,Filé de peito de frango,proteinas,invoice_abbreviation,file_frango,train,synthetic_rule
+155477f8e2f5,"LEITE  DESNATADO 2,5KG",leite_desnatado,Leite desnatado,laticinios,ocr_noise,leite_desnatado,train,synthetic_rule
+15c81548225b,FEIJ CARI PCT 1KG,feijao_carioca,Feijão carioca,mercearia,invoice_abbreviation,feijao_carioca,train,synthetic_rule
+17880692e179,ALHO PCT 1KG,alho,Alho,hortifruti,invoice_abbreviation,alho,train,synthetic_rule
+17d0414916d5,BETERRABA TRADICIONAL VILA SUL 1KG,beterraba,Beterraba,hortifruti,brand_noise,beterraba,train,synthetic_rule
+18b5dc9e4dcc,OVO DE GALINHA 1KG,ovo,Ovo de galinha,proteinas,ocr_noise,ovo,train,synthetic_rule
+1a963d99080e,"CEBOLA ROXA 2,5KG",cebola_roxa,Cebola roxa,hortifruti,ocr_noise,cebola_roxa,train,synthetic_rule
+1b45d280b47f,EXTRATO DE TOMATE TRADICIONAL VILA SUL 1KG,extrato_tomate,Extrato de tomate,mercearia,brand_noise,extrato_tomate,train,synthetic_rule
+1bc6646adb29,"BETERRABA 2,5KG",beterraba,Beterraba,hortifruti,ocr_noise,beterraba,train,synthetic_rule
+1c0f7df120cd,"OREGANO  SECO 2,5KG",oregano,Orégano seco,temperos,ocr_noise,oregano,train,synthetic_rule
+1c70ddc4407a,BAT INGL 500G,batata_inglesa,Batata inglesa,hortifruti,invoice_abbreviation,batata_inglesa,train,synthetic_rule
+23be712e2a1b,"PIMENTAO VERMELHO PREMIUM SABOR REAL 2,5KG",pimentao_vermelho,Pimentão vermelho,hortifruti,brand_noise,pimentao_vermelho,train,synthetic_rule
+241ba9e46906,"VINA ALCO 2,5KG",vinagre,Vinagre de álcool,temperos,invoice_abbreviation,vinagre,train,synthetic_rule
+2458b9cfd84e,CHOCOLATE EM PO TRADICIONAL VILA SUL 1KG,chocolate_po,Chocolate em pó,mercearia,brand_noise,chocolate_po,train,synthetic_rule
+245c12b918ed,MELANCIA RESF SERRA BOA PCT 1KG,melancia,Melancia,hortifruti,brand_noise,melancia,train,synthetic_rule
+25173f4fafea,LUVA NITRILICA PRETA M,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_f6ed70ed,train,human_authored
+25affffdf2c2,PALITO DENTE CX,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_4d65650a,train,human_authored
+28a409914357,AZEITE DE OLIVA RESF SERRA BOA PCT 1KG,azeite_oliva,Azeite de oliva,oleos,brand_noise,azeite_oliva,train,synthetic_rule
+2b9b37020b2e,FEIJ PRET CX 12UN,feijao_preto,Feijão preto,mercearia,invoice_abbreviation,feijao_preto,train,synthetic_rule
+300ef7d97480,"MACARRAO ESPAGUETE 2,5KG",macarrao_espaguete,Macarrão espaguete,mercearia,ocr_noise,macarrao_espaguete,train,synthetic_rule
+318d59e7519c,OREGANO SECO TRADICIONAL VILA SUL 1KG,oregano,Orégano seco,temperos,brand_noise,oregano,train,synthetic_rule
+3659a3b5eb3b,MOLH SOJA SHOY CX 12UN,molho_shoyu,Molho de soja shoyu,temperos,invoice_abbreviation,molho_shoyu,train,synthetic_rule
+36c6b45678d4,CHOC EM PO CX 12UN,chocolate_po,Chocolate em pó,mercearia,invoice_abbreviation,chocolate_po,train,synthetic_rule
+3824bcb73710,PIMENTAO VERMELHO CX 12UN,pimentao_vermelho,Pimentão vermelho,hortifruti,ocr_noise,pimentao_vermelho,train,synthetic_rule
+3a26a7695202,BICARBONATO  DE SODIO 1KG,bicarbonato,Bicarbonato de sódio,mercearia,ocr_noise,bicarbonato,train,synthetic_rule
+3adde9a2da43,FAR ROSC 1KG,farinha_rosca,Farinha de rosca,mercearia,invoice_abbreviation,farinha_rosca,train,synthetic_rule
+3b73f4223b9e,FERMENTO QUIMICO FOOD SERVICE CAMPO VERDE 500G,fermento_quimico,Fermento químico,mercearia,brand_noise,fermento_quimico,train,synthetic_rule
+3ce6a22831d1,"CHOCOLATE AO LEITE PREMIUM SABOR REAL 2,5KG",chocolate_leite,Chocolate ao leite,mercearia,brand_noise,chocolate_leite,train,synthetic_rule
+3e10b0b01fe2,"AMENDOIM 2,5KG",amendoim,Amendoim,mercearia,ocr_noise,amendoim,train,synthetic_rule
+3e9c2d9c717f,PIME VERM PCT 1KG,pimentao_vermelho,Pimentão vermelho,hortifruti,invoice_abbreviation,pimentao_vermelho,train,synthetic_rule
+3f6f627f1501,QJ MUSS PCT 1KG,queijo_mussarela,Queijo mussarela,laticinios,invoice_abbreviation,queijo_mussarela,train,synthetic_rule
+3f928800c87d,BANANA PRATA FOOD SERVICE CAMPO VERDE 500G,banana_prata,Banana prata,hortifruti,brand_noise,banana_prata,train,synthetic_rule
+40fcc4236bb0,MANT COM SAL PCT 1KG,manteiga,Manteiga com sal,laticinios,invoice_abbreviation,manteiga,train,synthetic_rule
+4244a87a0cde,CAFE TORR E MOID 500G,cafe,Café torrado e moído,bebidas,invoice_abbreviation,cafe,train,synthetic_rule
+443c3ea4a7c0,AZEITE DE OLIVA 500G,azeite_oliva,Azeite de oliva,oleos,ocr_noise,azeite_oliva,train,synthetic_rule
+45f3a82c72b3,PIMENTAO AMARELO RESF SERRA BOA PCT 1KG,pimentao_amarelo,Pimentão amarelo,hortifruti,brand_noise,pimentao_amarelo,train,synthetic_rule
+4653cd148398,COMI EM PO 1KG,cominho,Cominho em pó,temperos,invoice_abbreviation,cominho,train,synthetic_rule
+4697a4ad42ce,TOM ITAL CX 12UN,tomate,Tomate italiano,hortifruti,invoice_abbreviation,tomate,train,synthetic_rule
+48686599eccf,PIME AMAR 1KG,pimentao_amarelo,Pimentão amarelo,hortifruti,invoice_abbreviation,pimentao_amarelo,train,synthetic_rule
+4944662fb9b8,VINAGRE DE ALCOOL 1KG,vinagre,Vinagre de álcool,temperos,ocr_noise,vinagre,train,synthetic_rule
+4986ccc9d790,"FEIJAO CARIOCA PREMIUM SABOR REAL 2,5KG",feijao_carioca,Feijão carioca,mercearia,brand_noise,feijao_carioca,train,synthetic_rule
+4a18930bf6b7,PALMITO  EM CONSERVA 500G,palmito,Palmito em conserva,mercearia,ocr_noise,palmito,train,synthetic_rule
+4c0cce4c0e7e,ACUC MASC 500G,acucar_mascavo,Açúcar mascavo,mercearia,invoice_abbreviation,acucar_mascavo,train,synthetic_rule
+4d712bd94c6f,ACUCAR MASCAVO TIPO A CASA NOVA CX 12UN,acucar_mascavo,Açúcar mascavo,mercearia,brand_noise,acucar_mascavo,train,synthetic_rule
+4db0fbde4af0,"QUEIJO MUSSARELA PREMIUM SABOR REAL 2,5KG",queijo_mussarela,Queijo mussarela,laticinios,brand_noise,queijo_mussarela,train,synthetic_rule
+4e7649c3144b,CHOC AO LT PCT 1KG,chocolate_leite,Chocolate ao leite,mercearia,invoice_abbreviation,chocolate_leite,train,synthetic_rule
+5123f787d294,MACA GALA 500G,maca,Maçã gala,hortifruti,ocr_noise,maca,train,synthetic_rule
+513f65a3e8c3,LINGUICA TOSCANA TIPO A CASA NOVA CX 12UN,linguica_toscana,Linguiça toscana,proteinas,brand_noise,linguica_toscana,train,synthetic_rule
+53235f9718a5,LIMAO TAHITI RESF SERRA BOA PCT 1KG,limao,Limão tahiti,hortifruti,brand_noise,limao,train,synthetic_rule
+53a43fd872fa,MACARRAO ESPAGUETE TRADICIONAL VILA SUL 1KG,macarrao_espaguete,Macarrão espaguete,mercearia,brand_noise,macarrao_espaguete,train,synthetic_rule
+54d4353bac93,OVO DE GALINHA FOOD SERVICE CAMPO VERDE 500G,ovo,Ovo de galinha,proteinas,brand_noise,ovo,train,synthetic_rule
+55b90da155c5,ACUCAR  REFINADO CX 12UN,acucar_refinado,Açúcar refinado,mercearia,ocr_noise,acucar_refinado,train,synthetic_rule
+579b9b9a390b,PAPEL ALUMINIO 45CM,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_6739f3b1,train,human_authored
+5c3af6be8f58,FARINHA  DE MANDIOCA 1KG,farinha_mandioca,Farinha de mandioca,mercearia,ocr_noise,farinha_mandioca,train,synthetic_rule
+5c4007040557,MOLH INGL PCT 1KG,molho_ingles,Molho inglês,temperos,invoice_abbreviation,molho_ingles,train,synthetic_rule
+5ddbe6602840,PEPI PCT 1KG,pepino,Pepino,hortifruti,invoice_abbreviation,pepino,train,synthetic_rule
+5de6ec6d849a,LARA 1KG,laranja,Laranja,hortifruti,invoice_abbreviation,laranja,train,synthetic_rule
+5ef651a4ed96,AMIDO DE MILHO 1KG,amido_milho,Amido de milho,mercearia,ocr_noise,amido_milho,train,synthetic_rule
+5f10a40289c9,BATATADOCE 500G,batata_doce,Batata-doce,hortifruti,ocr_noise,batata_doce,train,synthetic_rule
+6000fe5e5838,"CEBOLA BRANCA PREMIUM SABOR REAL 2,5KG",cebola_branca,Cebola branca,hortifruti,brand_noise,cebola_branca,train,synthetic_rule
+6121f9fc6c65,CENOURA FOOD SERVICE CAMPO VERDE 500G,cenoura,Cenoura,hortifruti,brand_noise,cenoura,train,synthetic_rule
+615d2bcde8c8,FUBA DE MILHO PCT 1KG,fuba,Fubá de milho,mercearia,ocr_noise,fuba,train,synthetic_rule
+628c4b409150,ETIQUETA TERMICA 40X30,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_cab2d709,train,human_authored
+6538b5a905e0,CEB BRAN PCT 1KG,cebola_branca,Cebola branca,hortifruti,invoice_abbreviation,cebola_branca,train,synthetic_rule
+655ab0f44797,BETE CX 12UN,beterraba,Beterraba,hortifruti,invoice_abbreviation,beterraba,train,synthetic_rule
+65874382425e,ALFACE CRESPA TIPO A CASA NOVA CX 12UN,alface_crespa,Alface crespa,hortifruti,brand_noise,alface_crespa,train,synthetic_rule
+6646f1b384ef,LIMA TAHI 1KG,limao,Limão tahiti,hortifruti,invoice_abbreviation,limao,train,synthetic_rule
+6658fc1689d3,FAR TRIG 500G,farinha_trigo,Farinha de trigo,mercearia,invoice_abbreviation,farinha_trigo,train,synthetic_rule
+66945c640b20,COENTRO 1KG,coentro,Coentro,hortifruti,ocr_noise,coentro,train,synthetic_rule
+66a00189d135,CREM LT 500G,creme_leite,Creme de leite,laticinios,invoice_abbreviation,creme_leite,train,synthetic_rule
+6bb72b664da7,OLEO  DE GIRASSOL PCT 1KG,oleo_girassol,Óleo de girassol,oleos,ocr_noise,oleo_girassol,train,synthetic_rule
+6c4bac4c0ea4,ERVI EM CONS PCT 1KG,ervilha,Ervilha em conserva,mercearia,invoice_abbreviation,ervilha,train,synthetic_rule
+6dfa06944857,CREME DE LEITE PCT 1KG,creme_leite,Creme de leite,laticinios,ocr_noise,creme_leite,train,synthetic_rule
+6dfac79cf6f0,ACUC REFI PCT 1KG,acucar_refinado,Açúcar refinado,mercearia,invoice_abbreviation,acucar_refinado,train,synthetic_rule
+6f1ee89d00df,LEITE INTEGRAL 1KG,leite_integral,Leite integral,laticinios,ocr_noise,leite_integral,train,synthetic_rule
+6f80ba924e59,SECANTE MAQUINA LOUCA,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_5d61ccc3,train,human_authored
+704a96631935,"ARROZ INTEGRAL PREMIUM SABOR REAL 2,5KG",arroz_integral,Arroz integral,mercearia,brand_noise,arroz_integral,train,synthetic_rule
+70fb13578945,COGUMELO CHAMPIGNON TIPO A CASA NOVA CX 12UN,champignon,Cogumelo champignon,hortifruti,brand_noise,champignon,train,synthetic_rule
+718c55bdd6c6,"EXTRATO DE TOMATE 2,5KG",extrato_tomate,Extrato de tomate,mercearia,ocr_noise,extrato_tomate,train,synthetic_rule
+720b30709067,CARN BOV MOID 1KG,carne_moida,Carne bovina moída,proteinas,invoice_abbreviation,carne_moida,train,synthetic_rule
+720c09e973da,ALFA AMER 1KG,alface_americana,Alface americana,hortifruti,invoice_abbreviation,alface_americana,train,synthetic_rule
+732fcd6d8f66,"BICA SODI 2,5KG",bicarbonato,Bicarbonato de sódio,mercearia,invoice_abbreviation,bicarbonato,train,synthetic_rule
+74005bec94fc,"BANA PRAT 2,5KG",banana_prata,Banana prata,hortifruti,invoice_abbreviation,banana_prata,train,synthetic_rule
+748c207047d6,"ACUCAR REFINADO PREMIUM SABOR REAL 2,5KG",acucar_refinado,Açúcar refinado,mercearia,brand_noise,acucar_refinado,train,synthetic_rule
+773e3ec0f64a,CARNE  BOVINA MOIDA 500G,carne_moida,Carne bovina moída,proteinas,ocr_noise,carne_moida,train,synthetic_rule
+791e0d31c319,MACA GALA 1KG,maca,Maçã gala,hortifruti,invoice_abbreviation,maca,train,synthetic_rule
+7b60d4ddf57c,FEIJAO PRETO TRADICIONAL VILA SUL 1KG,feijao_preto,Feijão preto,mercearia,brand_noise,feijao_preto,train,synthetic_rule
+7c26b29cdfbe,CENOURA 1KG,cenoura,Cenoura,hortifruti,ocr_noise,cenoura,train,synthetic_rule
+7da06fb52dda,ERVILHA  EM CONSERVA CX 12UN,ervilha,Ervilha em conserva,mercearia,ocr_noise,ervilha,train,synthetic_rule
+7dd2a8ef8084,SALSA FRESCA TIPO A CASA NOVA CX 12UN,salsa,Salsa fresca,hortifruti,brand_noise,salsa,train,synthetic_rule
+7ebd4ae46647,CAFE TORRADO E MOIDO TIPO A CASA NOVA CX 12UN,cafe,Café torrado e moído,bebidas,brand_noise,cafe,train,synthetic_rule
+7f1e9464d97b,AZEITONA  PRETA PCT 1KG,azeitona_preta,Azeitona preta,mercearia,ocr_noise,azeitona_preta,train,synthetic_rule
+815dac2ba6d0,"FAR MAND 2,5KG",farinha_mandioca,Farinha de mandioca,mercearia,invoice_abbreviation,farinha_mandioca,train,synthetic_rule
+8197af494cae,FERMENTO QUIMICO 1KG,fermento_quimico,Fermento químico,mercearia,ocr_noise,fermento_quimico,train,synthetic_rule
+81b32a03a5c3,CARNE BOVINA MOIDA RESF SERRA BOA PCT 1KG,carne_moida,Carne bovina moída,proteinas,brand_noise,carne_moida,train,synthetic_rule
+81e4cf8ec465,FARINHA  DE TRIGO PCT 1KG,farinha_trigo,Farinha de trigo,mercearia,ocr_noise,farinha_trigo,train,synthetic_rule
+83a4838ee4a9,BATATA INGLESA PCT 1KG,batata_inglesa,Batata inglesa,hortifruti,ocr_noise,batata_inglesa,train,synthetic_rule
+841d5150d2be,COENTRO FOOD SERVICE CAMPO VERDE 500G,coentro,Coentro,hortifruti,brand_noise,coentro,train,synthetic_rule
+8651069993ca,CAIXA PIZZA 35CM,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_4626a2d6,train,human_authored
+86cb3938c7c0,BERI PCT 1KG,berinjela,Berinjela,hortifruti,invoice_abbreviation,berinjela,train,synthetic_rule
+871d29fd76d9,"GRAO-DE-BICO PREMIUM SABOR REAL 2,5KG",grao_bico,Grão-de-bico,mercearia,brand_noise,grao_bico,train,synthetic_rule
+87a99c65f295,LT COCO 500G,leite_coco,Leite de coco,mercearia,invoice_abbreviation,leite_coco,train,synthetic_rule
+894c96eb4c83,QJ MINAS FRESCAL PCT 1KG,queijo_minas,Queijo minas frescal,laticinios,ocr_noise,queijo_minas,train,synthetic_rule
+894dda0d06ca,FOSFORO LONGO CX,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_d9960de3,train,human_authored
+8b17cfd88c9c,FARINHA DE TRIGO TIPO A CASA NOVA CX 12UN,farinha_trigo,Farinha de trigo,mercearia,brand_noise,farinha_trigo,train,synthetic_rule
+8bf6d5336f1a,FILE  DE PEITO DE FR 500G,file_frango,Filé de peito de frango,proteinas,ocr_noise,file_frango,train,synthetic_rule
+8cecae4b07bd,QUEIJO COALHO RESF SERRA BOA PCT 1KG,queijo_coalho,Queijo coalho,laticinios,brand_noise,queijo_coalho,train,synthetic_rule
+8d4b12d9dcbd,"MARACUJA 2,5KG",maracuja,Maracujá,hortifruti,ocr_noise,maracuja,train,synthetic_rule
+9022d34be388,"LOMBO SUINO PREMIUM SABOR REAL 2,5KG",lombo_suino,Lombo suíno,proteinas,brand_noise,lombo_suino,train,synthetic_rule
+91887186b6d4,PIMENTA CALABRESA TRADICIONAL VILA SUL 1KG,pimenta_calabresa,Pimenta calabresa,temperos,brand_noise,pimenta_calabresa,train,synthetic_rule
+924bfa6b93f8,FARINHA DE MANDIOCA FOOD SERVICE CAMPO VERDE 500G,farinha_mandioca,Farinha de mandioca,mercearia,brand_noise,farinha_mandioca,train,synthetic_rule
+9264d7be671f,LEITE INTEGRAL FOOD SERVICE CAMPO VERDE 500G,leite_integral,Leite integral,laticinios,brand_noise,leite_integral,train,synthetic_rule
+9395b1fc7261,"FERM QUIM 2,5KG",fermento_quimico,Fermento químico,mercearia,invoice_abbreviation,fermento_quimico,train,synthetic_rule
+93e39c5fd5e6,ALFACE AMERICANA 500G,alface_americana,Alface americana,hortifruti,ocr_noise,alface_americana,train,synthetic_rule
+942601be5686,"FEIJAO  PRETO 2,5KG",feijao_preto,Feijão preto,mercearia,ocr_noise,feijao_preto,train,synthetic_rule
+947a0981891b,LOMB SUIN PCT 1KG,lombo_suino,Lombo suíno,proteinas,invoice_abbreviation,lombo_suino,train,synthetic_rule
+98a42e7213a6,ALFACE AMERICANA RESF SERRA BOA PCT 1KG,alface_americana,Alface americana,hortifruti,brand_noise,alface_americana,train,synthetic_rule
+98b55c143697,"TOMATE  ITALIANO 2,5KG",tomate,Tomate italiano,hortifruti,ocr_noise,tomate,train,synthetic_rule
+9aeaefc902f1,"MOLHO DE SOJA SHOYU 2,5KG",molho_shoyu,Molho de soja shoyu,temperos,ocr_noise,molho_shoyu,train,synthetic_rule
+9b5555a5f9b4,CEBOLA  BRANCA CX 12UN,cebola_branca,Cebola branca,hortifruti,ocr_noise,cebola_branca,train,synthetic_rule
+9bf8f6ed3a0e,QJ  COALHO 500G,queijo_coalho,Queijo coalho,laticinios,ocr_noise,queijo_coalho,train,synthetic_rule
+9e000f8aab9c,TOMATE ITALIANO TRADICIONAL VILA SUL 1KG,tomate,Tomate italiano,hortifruti,brand_noise,tomate,train,synthetic_rule
+a1bd86e827bd,DETERGENTE NEUTRO 5L,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_ac278286,train,human_authored
+a20d7c23affd,AMEN CX 12UN,amendoim,Amendoim,mercearia,invoice_abbreviation,amendoim,train,synthetic_rule
+a31e8a5eb72d,FEIJAO CARIOCA CX 12UN,feijao_carioca,Feijão carioca,mercearia,ocr_noise,feijao_carioca,train,synthetic_rule
+a4119cd0118d,FUBA MILH 500G,fuba,Fubá de milho,mercearia,invoice_abbreviation,fuba,train,synthetic_rule
+a42195a44d34,LING TOSC 500G,linguica_toscana,Linguiça toscana,proteinas,invoice_abbreviation,linguica_toscana,train,synthetic_rule
+a5414eb3b316,LEITE DE COCO TIPO A CASA NOVA CX 12UN,leite_coco,Leite de coco,mercearia,brand_noise,leite_coco,train,synthetic_rule
+a5e97455fb0a,ESPONJA DUPLA FACE CX 60,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_433697ac,train,human_authored
+a6103ed9d897,LOMBO  SUINO CX 12UN,lombo_suino,Lombo suíno,proteinas,ocr_noise,lombo_suino,train,synthetic_rule
+a8eaae568789,GRAODEBICO CX 12UN,grao_bico,Grão-de-bico,mercearia,ocr_noise,grao_bico,train,synthetic_rule
+a9ed91b17ab1,QJ MINA FRES 500G,queijo_minas,Queijo minas frescal,laticinios,invoice_abbreviation,queijo_minas,train,synthetic_rule
+aa4bc229c153,MAIONESE PCT 1KG,maionese,Maionese,mercearia,ocr_noise,maionese,train,synthetic_rule
+aab3098a836a,COMINHO EM PO RESF SERRA BOA PCT 1KG,cominho,Cominho em pó,temperos,brand_noise,cominho,train,synthetic_rule
+ab1b8e96af12,FILE DE PEITO DE FRANGO RESF SERRA BOA PCT 1KG,file_frango,Filé de peito de frango,proteinas,brand_noise,file_frango,train,synthetic_rule
+acc9c46cd688,MELA 1KG,melancia,Melancia,hortifruti,invoice_abbreviation,melancia,train,synthetic_rule
+ae1852bbe65a,CHOCOLATE AO LEITE CX 12UN,chocolate_leite,Chocolate ao leite,mercearia,ocr_noise,chocolate_leite,train,synthetic_rule
+aee321b2cfc5,AZEI PRET 500G,azeitona_preta,Azeitona preta,mercearia,invoice_abbreviation,azeitona_preta,train,synthetic_rule
+af4e690945b8,BATATA-DOCE RESF SERRA BOA PCT 1KG,batata_doce,Batata-doce,hortifruti,brand_noise,batata_doce,train,synthetic_rule
+af894864eaf4,DESINFETANTE LAVANDA,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_5409bf3e,train,human_authored
+afd890a28dae,MARA CX 12UN,maracuja,Maracujá,hortifruti,invoice_abbreviation,maracuja,train,synthetic_rule
+aff5483a44e6,AZ OLIV 1KG,azeite_oliva,Azeite de oliva,oleos,invoice_abbreviation,azeite_oliva,train,synthetic_rule
+b090f26bd948,ARROZ  ARBOREO 500G,arroz_arboreo,Arroz arbóreo,mercearia,ocr_noise,arroz_arboreo,train,synthetic_rule
+b1975248d49c,"BERINJELA PREMIUM SABOR REAL 2,5KG",berinjela,Berinjela,hortifruti,brand_noise,berinjela,train,synthetic_rule
+b22a10904cc9,ARRO INT PCT 1KG,arroz_integral,Arroz integral,mercearia,invoice_abbreviation,arroz_integral,train,synthetic_rule
+b4406027cd55,VASSOURA NYLON,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_d339cc6b,train,human_authored
+b6b2a7d16de3,LINGUICA TOSCANA PCT 1KG,linguica_toscana,Linguiça toscana,proteinas,ocr_noise,linguica_toscana,train,synthetic_rule
+b7ece24667d7,SALS FRES 500G,salsa,Salsa fresca,hortifruti,invoice_abbreviation,salsa,train,synthetic_rule
+b87babd74d40,MAIO 500G,maionese,Maionese,mercearia,invoice_abbreviation,maionese,train,synthetic_rule
+b8bf09f1667d,"CHOCOLATE  EM PO 2,5KG",chocolate_po,Chocolate em pó,mercearia,ocr_noise,chocolate_po,train,synthetic_rule
+b9099978346b,"BACON 2,5KG",bacon,Bacon,proteinas,ocr_noise,bacon,train,synthetic_rule
+bca1b88e5d36,MOLHO DE TOMATE FOOD SERVICE CAMPO VERDE 500G,molho_tomate,Molho de tomate,mercearia,brand_noise,molho_tomate,train,synthetic_rule
+be66e2148625,LIMPADOR DESENGORDURANTE,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_791a7675,train,human_authored
+c15452394789,LARANJA RESF SERRA BOA PCT 1KG,laranja,Laranja,hortifruti,brand_noise,laranja,train,synthetic_rule
+c2c60fb01f75,LARANJA 500G,laranja,Laranja,hortifruti,ocr_noise,laranja,train,synthetic_rule
+c39374ce4072,AMIDO DE MILHO FOOD SERVICE CAMPO VERDE 500G,amido_milho,Amido de milho,mercearia,brand_noise,amido_milho,train,synthetic_rule
+c6c59738284e,SALSA  FRESCA PCT 1KG,salsa,Salsa fresca,hortifruti,ocr_noise,salsa,train,synthetic_rule
+c73d34295b41,LIMAO  TAHITI 500G,limao,Limão tahiti,hortifruti,ocr_noise,limao,train,synthetic_rule
+c7a2bcc9ec0a,QUEIJO MINAS FRESCAL TIPO A CASA NOVA CX 12UN,queijo_minas,Queijo minas frescal,laticinios,brand_noise,queijo_minas,train,synthetic_rule
+c84b9ae8e860,GAS BUTANO CARTUCHO,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_949d5607,train,human_authored
+ca0000488d5e,BICARBONATO DE SODIO FOOD SERVICE CAMPO VERDE 500G,bicarbonato,Bicarbonato de sódio,mercearia,brand_noise,bicarbonato,train,synthetic_rule
+cb414ef01bbd,MARMITA ALUMINIO N8,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_6b551d2e,train,human_authored
+cb6d3de3d6bd,GRAO BICO PCT 1KG,grao_bico,Grão-de-bico,mercearia,invoice_abbreviation,grao_bico,train,synthetic_rule
+cdac2b667556,FILME PVC 28CM,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_1ad83b39,train,human_authored
+cdf27d5de808,MACA ESPA CX 12UN,macarrao_espaguete,Macarrão espaguete,mercearia,invoice_abbreviation,macarrao_espaguete,train,synthetic_rule
+d004d7c2956c,MANTEIGA COM SAL CX 12UN,manteiga,Manteiga com sal,laticinios,ocr_noise,manteiga,train,synthetic_rule
+d00dc675824d,"MANTEIGA COM SAL PREMIUM SABOR REAL 2,5KG",manteiga,Manteiga com sal,laticinios,brand_noise,manteiga,train,synthetic_rule
+d1e9dc567eb3,COGU CHAM 500G,champignon,Cogumelo champignon,hortifruti,invoice_abbreviation,champignon,train,synthetic_rule
+d1ebb6f7e9ba,AMENDOIM TRADICIONAL VILA SUL 1KG,amendoim,Amendoim,mercearia,brand_noise,amendoim,train,synthetic_rule
+d2dd02ea73ee,ACUCAR MASCAVO PCT 1KG,acucar_mascavo,Açúcar mascavo,mercearia,ocr_noise,acucar_mascavo,train,synthetic_rule
+d3fbf86ea66d,MOLHO  INGLES CX 12UN,molho_ingles,Molho inglês,temperos,ocr_noise,molho_ingles,train,synthetic_rule
+d40e68698f9b,"PIMENTA CALABRESA 2,5KG",pimenta_calabresa,Pimenta calabresa,temperos,ocr_noise,pimenta_calabresa,train,synthetic_rule
+d46f455cd951,SABAO MAQUINA LOUCA,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_874b9d24,train,human_authored
+d71fb56a6f63,CEBOLA ROXA TRADICIONAL VILA SUL 1KG,cebola_roxa,Cebola roxa,hortifruti,brand_noise,cebola_roxa,train,synthetic_rule
+d763241cca5b,PALMITO EM CONSERVA RESF SERRA BOA PCT 1KG,palmito,Palmito em conserva,mercearia,brand_noise,palmito,train,synthetic_rule
+d7eb5d667378,BANANA PRATA 1KG,banana_prata,Banana prata,hortifruti,ocr_noise,banana_prata,train,synthetic_rule
+da26264a2794,"ALHO PREMIUM SABOR REAL 2,5KG",alho,Alho,hortifruti,brand_noise,alho,train,synthetic_rule
+da60d0e195cc,ARROZ ARBOREO RESF SERRA BOA PCT 1KG,arroz_arboreo,Arroz arbóreo,mercearia,brand_noise,arroz_arboreo,train,synthetic_rule
+dc1da463c0ae,ALHO CX 12UN,alho,Alho,hortifruti,ocr_noise,alho,train,synthetic_rule
+dcd7e5c40309,PALM EM CONS 1KG,palmito,Palmito em conserva,mercearia,invoice_abbreviation,palmito,train,synthetic_rule
+dd77552ee048,"COEN 2,5KG",coentro,Coentro,hortifruti,invoice_abbreviation,coentro,train,synthetic_rule
+dd7bb153b9f8,ARRO ARBO 1KG,arroz_arboreo,Arroz arbóreo,mercearia,invoice_abbreviation,arroz_arboreo,train,synthetic_rule
+e0266e1a1a91,"LT INT 2,5KG",leite_integral,Leite integral,laticinios,invoice_abbreviation,leite_integral,train,synthetic_rule
+e0f02fb77f2d,"PEPINO PREMIUM SABOR REAL 2,5KG",pepino,Pepino,hortifruti,brand_noise,pepino,train,synthetic_rule
+e1d5b80629e0,MAIONESE TIPO A CASA NOVA CX 12UN,maionese,Maionese,mercearia,brand_noise,maionese,train,synthetic_rule
+e1de1a371e95,LT DESN CX 12UN,leite_desnatado,Leite desnatado,laticinios,invoice_abbreviation,leite_desnatado,train,synthetic_rule
+e28f4bc8c390,"ERVILHA EM CONSERVA PREMIUM SABOR REAL 2,5KG",ervilha,Ervilha em conserva,mercearia,brand_noise,ervilha,train,synthetic_rule
+e346e5812e25,MARACUJA TRADICIONAL VILA SUL 1KG,maracuja,Maracujá,hortifruti,brand_noise,maracuja,train,synthetic_rule
+e4f6408884e1,AZEITONA PRETA TIPO A CASA NOVA CX 12UN,azeitona_preta,Azeitona preta,mercearia,brand_noise,azeitona_preta,train,synthetic_rule
+e68a0b76b06f,ARROZ  INTEGRAL CX 12UN,arroz_integral,Arroz integral,mercearia,ocr_noise,arroz_integral,train,synthetic_rule
+e6dd574bca17,CEB ROXA CX 12UN,cebola_roxa,Cebola roxa,hortifruti,invoice_abbreviation,cebola_roxa,train,synthetic_rule
+e6e143bedd8c,QJ COAL 1KG,queijo_coalho,Queijo coalho,laticinios,invoice_abbreviation,queijo_coalho,train,synthetic_rule
+e76d83ab6193,COMINHO  EM PO 500G,cominho,Cominho em pó,temperos,ocr_noise,cominho,train,synthetic_rule
+e7ad20bfef3c,"CENO 2,5KG",cenoura,Cenoura,hortifruti,invoice_abbreviation,cenoura,train,synthetic_rule
+ea9c9262ec70,"OVO GALI 2,5KG",ovo,Ovo de galinha,proteinas,invoice_abbreviation,ovo,train,synthetic_rule
+eabc98960f0d,PEPINO CX 12UN,pepino,Pepino,hortifruti,ocr_noise,pepino,train,synthetic_rule
+eb5616cbbe97,"MOLHO INGLES PREMIUM SABOR REAL 2,5KG",molho_ingles,Molho inglês,temperos,brand_noise,molho_ingles,train,synthetic_rule
+ecba26523d58,"MOLH TOM 2,5KG",molho_tomate,Molho de tomate,mercearia,invoice_abbreviation,molho_tomate,train,synthetic_rule
+ed3e49820bcf,SACO LIXO 100L PCT,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_79b31236,train,human_authored
+ee28ab23d841,MOLHO DE SOJA SHOYU TRADICIONAL VILA SUL 1KG,molho_shoyu,Molho de soja shoyu,temperos,brand_noise,molho_shoyu,train,synthetic_rule
+f1292827e020,CAFE  TORRADO E MOIDO PCT 1KG,cafe,Café torrado e moído,bebidas,ocr_noise,cafe,train,synthetic_rule
+f1b8849c894b,BACO CX 12UN,bacon,Bacon,proteinas,invoice_abbreviation,bacon,train,synthetic_rule
+f54e747cebe4,BERINJELA CX 12UN,berinjela,Berinjela,hortifruti,ocr_noise,berinjela,train,synthetic_rule
+f5ddba440fe9,EXTR TOM CX 12UN,extrato_tomate,Extrato de tomate,mercearia,invoice_abbreviation,extrato_tomate,train,synthetic_rule
+f6b79d9b4822,ALFA CRES 500G,alface_crespa,Alface crespa,hortifruti,invoice_abbreviation,alface_crespa,train,synthetic_rule
+f81111010143,FUBA DE MILHO TIPO A CASA NOVA CX 12UN,fuba,Fubá de milho,mercearia,brand_noise,fuba,train,synthetic_rule
+f8b34f968d40,FARINHA DE ROSCA 500G,farinha_rosca,Farinha de rosca,mercearia,ocr_noise,farinha_rosca,train,synthetic_rule
+f8ce551bd48f,QJ  MUSS CX 12UN,queijo_mussarela,Queijo mussarela,laticinios,ocr_noise,queijo_mussarela,train,synthetic_rule
+f90cf81fb5cb,CREME DE LEITE TIPO A CASA NOVA CX 12UN,creme_leite,Creme de leite,laticinios,brand_noise,creme_leite,train,synthetic_rule
+f9455dd3bdd2,RODO ALUMINIO 40CM,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_926e89ea,train,human_authored
+f94b62f93094,OLEO GIRA 500G,oleo_girassol,Óleo de girassol,oleos,invoice_abbreviation,oleo_girassol,train,synthetic_rule
+fae5daa14c7f,MACA GALA RESF SERRA BOA PCT 1KG,maca,Maçã gala,hortifruti,brand_noise,maca,train,synthetic_rule
+fd22bb998670,BATATA INGLESA TIPO A CASA NOVA CX 12UN,batata_inglesa,Batata inglesa,hortifruti,brand_noise,batata_inglesa,train,synthetic_rule
+fe19ffcf010c,MOLHO  DE TOMATE 1KG,molho_tomate,Molho de tomate,mercearia,ocr_noise,molho_tomate,train,synthetic_rule
+ffdc614a481f,FARINHA DE ROSCA RESF SERRA BOA PCT 1KG,farinha_rosca,Farinha de rosca,mercearia,brand_noise,farinha_rosca,train,synthetic_rule
+fff64de5243d,ALFACE  CRESPA PCT 1KG,alface_crespa,Alface crespa,hortifruti,ocr_noise,alface_crespa,train,synthetic_rule
+0049a3bf8800,PRESUNTO COZIDO FOOD SERVICE CAMPO VERDE 500G,presunto,Presunto cozido,proteinas,brand_noise,presunto,validation,synthetic_rule
+11fee53cb3aa,HORT CX 12UN,hortela,Hortelã,hortifruti,invoice_abbreviation,hortela,validation,synthetic_rule
+1817409484f1,"OLEO DE SOJA PREMIUM SABOR REAL 2,5KG",oleo_soja,Óleo de soja,oleos,brand_noise,oleo_soja,validation,synthetic_rule
+1c164fe54191,SAL REFI 1KG,sal,Sal refinado,temperos,invoice_abbreviation,sal,validation,synthetic_rule
+1f6969d77fe3,QJ PARM CX 12UN,queijo_parmesao,Queijo parmesão,laticinios,invoice_abbreviation,queijo_parmesao,validation,synthetic_rule
+27475af9199d,"PIME REIN 2,5KG",pimenta_reino,Pimenta-do-reino,temperos,invoice_abbreviation,pimenta_reino,validation,synthetic_rule
+2a942b782e2c,BROCOLIS 500G,brocolis,Brócolis,hortifruti,ocr_noise,brocolis,validation,synthetic_rule
+3c2e8542e33a,SAL REFINADO RESF SERRA BOA PCT 1KG,sal,Sal refinado,temperos,brand_noise,sal,validation,synthetic_rule
+3f08313743b4,OLEO SOJA PCT 1KG,oleo_soja,Óleo de soja,oleos,invoice_abbreviation,oleo_soja,validation,synthetic_rule
+4455c167dcff,"PRES COZI 2,5KG",presunto,Presunto cozido,proteinas,invoice_abbreviation,presunto,validation,synthetic_rule
+4e2f24c68744,PIMENTA-DO-REINO FOOD SERVICE CAMPO VERDE 500G,pimenta_reino,Pimenta-do-reino,temperos,brand_noise,pimenta_reino,validation,synthetic_rule
+4e39d28e79bb,"QJ PARMESAO 2,5KG",queijo_parmesao,Queijo parmesão,laticinios,ocr_noise,queijo_parmesao,validation,synthetic_rule
+511e5764a0a1,"LEITE CONDENSADO PREMIUM SABOR REAL 2,5KG",leite_condensado,Leite condensado,laticinios,brand_noise,leite_condensado,validation,synthetic_rule
+6212877b0908,PRESUNTO COZIDO 1KG,presunto,Presunto cozido,proteinas,ocr_noise,presunto,validation,synthetic_rule
+6bd58077f073,MILH VERD EM CONS 500G,milho,Milho verde em conserva,mercearia,invoice_abbreviation,milho,validation,synthetic_rule
+712d2bee72ce,PAPEL TOALHA BOBINA,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_caf31d30,validation,human_authored
+75d56eb9c3e9,MILHO VERDE EM CONSERVA PCT 1KG,milho,Milho verde em conserva,mercearia,ocr_noise,milho,validation,synthetic_rule
+779f09782c63,ACUCAR  CRISTAL 500G,acucar_cristal,Açúcar cristal,mercearia,ocr_noise,acucar_cristal,validation,synthetic_rule
+7bc38f7b1606,OLEO DE SOJA CX 12UN,oleo_soja,Óleo de soja,oleos,ocr_noise,oleo_soja,validation,synthetic_rule
+7f55c5ac1a6f,BROCOLIS RESF SERRA BOA PCT 1KG,brocolis,Brócolis,hortifruti,brand_noise,brocolis,validation,synthetic_rule
+905996f2d882,CANUDO BIODEGRADAVEL,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_e5c1939e,validation,human_authored
+a7192719a65d,PIMENTADOREINO 1KG,pimenta_reino,Pimenta-do-reino,temperos,ocr_noise,pimenta_reino,validation,synthetic_rule
+abeaed645044,"HORTELA 2,5KG",hortela,Hortelã,hortifruti,ocr_noise,hortela,validation,synthetic_rule
+d4224f88b0a2,HORTELA TRADICIONAL VILA SUL 1KG,hortela,Hortelã,hortifruti,brand_noise,hortela,validation,synthetic_rule
+d520ce492a76,ACUCAR CRISTAL RESF SERRA BOA PCT 1KG,acucar_cristal,Açúcar cristal,mercearia,brand_noise,acucar_cristal,validation,synthetic_rule
+d5877a2d623f,BROC 1KG,brocolis,Brócolis,hortifruti,invoice_abbreviation,brocolis,validation,synthetic_rule
+d63e6ee23f07,QUEIJO PARMESAO TRADICIONAL VILA SUL 1KG,queijo_parmesao,Queijo parmesão,laticinios,brand_noise,queijo_parmesao,validation,synthetic_rule
+e00babe60f6f,MILHO VERDE EM CONSERVA TIPO A CASA NOVA CX 12UN,milho,Milho verde em conserva,mercearia,brand_noise,milho,validation,synthetic_rule
+e1331d8a2653,LEITE CONDENSADO CX 12UN,leite_condensado,Leite condensado,laticinios,ocr_noise,leite_condensado,validation,synthetic_rule
+e55e5f3b3223,SAL REFINADO 500G,sal,Sal refinado,temperos,ocr_noise,sal,validation,synthetic_rule
+f846082c6331,LT COND PCT 1KG,leite_condensado,Leite condensado,laticinios,invoice_abbreviation,leite_condensado,validation,synthetic_rule
+f8ea55b8cfe1,PANO MULTIUSO ROLO,NO_MATCH,Sem correspondência,fora_catalogo,out_of_scope,no_match_7251b8ba,validation,human_authored
+fdde46b3cb49,ACUC CRIS 1KG,acucar_cristal,Açúcar cristal,mercearia,invoice_abbreviation,acucar_cristal,validation,synthetic_rule

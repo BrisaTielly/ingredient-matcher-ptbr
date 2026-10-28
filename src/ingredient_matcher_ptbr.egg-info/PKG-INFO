@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: ingredient-matcher-ptbr
+Version: 0.1.0
+Summary: Entity matching de nomes ruidosos de ingredientes em português
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<3,>=1.26
+Requires-Dist: pandas<3,>=2.2
+Requires-Dist: rapidfuzz<4,>=3.9
+Requires-Dist: scikit-learn<2,>=1.5
+Requires-Dist: sentence-transformers<6,>=3.2
+Requires-Dist: torch<3,>=2.2
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8.2; extra == "dev"
+Requires-Dist: ruff<1,>=0.6; extra == "dev"
+Provides-Extra: app
+Requires-Dist: gradio<7,>=5; extra == "app"
+Requires-Dist: huggingface-hub<2,>=0.27; extra == "app"
+Provides-Extra: publish
+Requires-Dist: datasets<5,>=3; extra == "publish"
+Requires-Dist: huggingface-hub<2,>=0.27; extra == "publish"
+Dynamic: license-file
+
+---
+title: Ingredient Matcher PT-BR
+emoji: 🧾
+colorFrom: red
+colorTo: yellow
+sdk: gradio
+sdk_version: 6.30.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
+# Ingredient Matcher PT-BR
+
+Entity matching de descrições ruidosas de compras e notas fiscais para um catálogo de ingredientes em português.
+
+[Demo](https://huggingface.co/spaces/BrisaTielly/ingredient-matcher-ptbr) · [Modelo](https://huggingface.co/BrisaTielly/ingredient-matcher-ptbr-model) · [Dataset](https://huggingface.co/datasets/BrisaTielly/ingredient-matcher-ptbr)
+
+`QJ MUSS FAT PCT 1KG` → `queijo_mussarela`
+
+## Por que
+
+Restaurantes recebem o mesmo insumo com abreviações, marcas, unidades e descrições diferentes. Sem resolver essas identidades, custos, estoque e informação nutricional ficam fragmentados. Este projeto compara uma regra lexical, um retriever multilíngue pronto e o mesmo retriever após fine-tuning.
+
+## Resultados
+
+Os resultados abaixo são gerados por `make eval`. O limiar de abstenção é calibrado somente na validação; o teste contém ingredientes que não aparecem no fine-tuning.
+
+<!-- RESULTS_START -->
+Resultados serão inseridos após a execução do benchmark completo.
+<!-- RESULTS_END -->
+
+## Dataset
+
+- 100 ingredientes canônicos.
+- 300 descrições positivas geradas por regras versionadas.
+- 30 itens fora do catálogo (`NO_MATCH`).
+- 66 exemplos no teste, separados por ingrediente.
+- Marcas fictícias e nenhum dado privado ou corporativo.
+
+O teste é pequeno e sintético. Ele mede robustez controlada a abreviações e ruído, não desempenho de produção.
+
+## Métodos
+
+1. **RapidFuzz:** `WRatio` após normalização compartilhada.
+2. **E5 base:** `intfloat/multilingual-e5-small`, similaridade de cosseno.
+3. **E5 fine-tuned:** treinamento contrastivo com `MultipleNegativesRankingLoss`.
+
+Todos recuperam top-5 no mesmo catálogo. O score top-1 precisa superar um limiar calibrado na validação; caso contrário, a resposta é `revisar`.
+
+## Reproduzir
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e '.[dev,app,publish]'
+make data
+make test
+make train
+make eval
+make app
+```
+
+## Avaliação
+
+- `retrieval_top1_accuracy`: canônico correto na primeira posição, antes da abstenção.
+- `recall_at_5`: canônico correto entre os cinco primeiros.
+- `precision`, `recall` e `f1`: qualidade das decisões automatizadas sob o limiar.
+- `coverage`: fração aceita automaticamente.
+- `no_match_accuracy`: itens fora do catálogo corretamente enviados para revisão.
+
+Artefatos reproduzíveis ficam em `results/metrics.json`, `results/predictions.csv` e `results/report.md`.
+
+## Limitações
+
+O dataset positivo é sintético, pequeno e cobre apenas 100 ingredientes. O fine-tuning aprende padrões de ruído controlados e precisa ser reavaliado com descrições reais antes de uso operacional. O conjunto `NO_MATCH` também é pequeno; por isso, o limiar publicado serve como demonstração, não como política de automação em produção.

@@ -1,0 +1,101 @@
+id,name,category
+acucar_cristal,Açúcar cristal,mercearia
+acucar_mascavo,Açúcar mascavo,mercearia
+acucar_refinado,Açúcar refinado,mercearia
+adocante,Edulcorante culinário,mercearia
+agua_coco,Água de coco,bebidas
+alface_americana,Alface americana,hortifruti
+alface_crespa,Alface crespa,hortifruti
+alho,Alho,hortifruti
+amendoim,Amendoim,mercearia
+amido_milho,Amido de milho,mercearia
+arroz_arboreo,Arroz arbóreo,mercearia
+arroz_branco,Arroz branco,mercearia
+arroz_integral,Arroz integral,mercearia
+atum,Atum em conserva,proteinas
+aveia,Aveia em flocos,mercearia
+azeite_oliva,Azeite de oliva,oleos
+azeitona_preta,Azeitona preta,mercearia
+azeitona_verde,Azeitona verde,mercearia
+bacon,Bacon,proteinas
+banana_prata,Banana prata,hortifruti
+batata_doce,Batata-doce,hortifruti
+batata_inglesa,Batata inglesa,hortifruti
+berinjela,Berinjela,hortifruti
+beterraba,Beterraba,hortifruti
+bicarbonato,Bicarbonato de sódio,mercearia
+brocolis,Brócolis,hortifruti
+cafe,Café torrado e moído,bebidas
+calabresa,Linguiça calabresa,proteinas
+camarao,Camarão,proteinas
+canela,Canela em pó,temperos
+carne_moida,Carne bovina moída,proteinas
+castanha_caju,Castanha de caju,mercearia
+cebola_branca,Cebola branca,hortifruti
+cebola_roxa,Cebola roxa,hortifruti
+cenoura,Cenoura,hortifruti
+cerveja,Cerveja,bebidas
+champignon,Cogumelo champignon,hortifruti
+chocolate_leite,Chocolate ao leite,mercearia
+chocolate_po,Chocolate em pó,mercearia
+coentro,Coentro,hortifruti
+cominho,Cominho em pó,temperos
+creme_leite,Creme de leite,laticinios
+ervilha,Ervilha em conserva,mercearia
+extrato_tomate,Extrato de tomate,mercearia
+farinha_mandioca,Farinha de mandioca,mercearia
+farinha_rosca,Farinha de rosca,mercearia
+farinha_trigo,Farinha de trigo,mercearia
+feijao_carioca,Feijão carioca,mercearia
+feijao_preto,Feijão preto,mercearia
+fermento_quimico,Fermento químico,mercearia
+file_frango,Filé de peito de frango,proteinas
+fuba,Fubá de milho,mercearia
+grao_bico,Grão-de-bico,mercearia
+hortela,Hortelã,hortifruti
+iogurte_natural,Iogurte natural,laticinios
+laranja,Laranja,hortifruti
+leite_coco,Leite de coco,mercearia
+leite_condensado,Leite condensado,laticinios
+leite_desnatado,Leite desnatado,laticinios
+leite_integral,Leite integral,laticinios
+limao,Limão tahiti,hortifruti
+linguica_toscana,Linguiça toscana,proteinas
+lombo_suino,Lombo suíno,proteinas
+macarrao_espaguete,Macarrão espaguete,mercearia
+macarrao_parafuso,Macarrão parafuso,mercearia
+maca,Maçã gala,hortifruti
+maionese,Maionese,mercearia
+manteiga,Manteiga com sal,laticinios
+maracuja,Maracujá,hortifruti
+mel,Mel,mercearia
+melancia,Melancia,hortifruti
+milho,Milho verde em conserva,mercearia
+molho_ingles,Molho inglês,temperos
+molho_shoyu,Molho de soja shoyu,temperos
+molho_tomate,Molho de tomate,mercearia
+mostarda,Molho de mostarda,temperos
+oleo_girassol,Óleo de girassol,oleos
+oleo_soja,Óleo de soja,oleos
+oregano,Orégano seco,temperos
+ovo,Ovo de galinha,proteinas
+palmito,Palmito em conserva,mercearia
+paprica,Páprica em pó,temperos
+pepino,Pepino,hortifruti
+pimenta_calabresa,Pimenta calabresa,temperos
+pimenta_reino,Pimenta-do-reino,temperos
+pimentao_amarelo,Pimentão amarelo,hortifruti
+pimentao_verde,Pimentão verde,hortifruti
+pimentao_vermelho,Pimentão vermelho,hortifruti
+polpa_tomate,Polpa de tomate,mercearia
+presunto,Presunto cozido,proteinas
+queijo_coalho,Queijo coalho,laticinios
+queijo_minas,Queijo minas frescal,laticinios
+queijo_mussarela,Queijo mussarela,laticinios
+queijo_parmesao,Queijo parmesão,laticinios
+repolho,Repolho verde,hortifruti
+sal,Sal refinado,temperos
+salsa,Salsa fresca,hortifruti
+sardinha,Sardinha em conserva,proteinas
+tomate,Tomate italiano,hortifruti
+vinagre,Vinagre de álcool,temperos

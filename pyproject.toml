@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ingredient-matcher-ptbr"
+version = "0.1.0"
+description = "Entity matching de nomes ruidosos de ingredientes em português"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "accelerate>=1.1,<2",
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "rapidfuzz>=3.9,<4",
+  "scikit-learn>=1.5,<2",
+  "sentence-transformers>=3.2,<6",
+  "torch>=2.2,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2,<9", "ruff>=0.6,<1"]
+app = ["gradio>=5,<7", "huggingface-hub>=0.27,<2"]
+publish = ["datasets>=3,<5", "huggingface-hub>=0.27,<2"]
+
+[project.scripts]
+ingredient-data = "ingredient_matcher.data:main"
+ingredient-eval = "ingredient_matcher.evaluate:main"
+ingredient-train = "ingredient_matcher.train:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
