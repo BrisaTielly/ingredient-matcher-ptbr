@@ -179,7 +179,11 @@ def write_results(
         {key: value for key, value in row.items() if key != "candidates"} for row in predictions
     ]
     with (results_dir / "predictions.csv").open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(flat_predictions[0]))
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=list(flat_predictions[0]),
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(flat_predictions)
 
