@@ -34,10 +34,10 @@ jobs:
           python scripts/evaluate_real.py
           --methods fuzzy,fine_tuned
           --fine-tuned-model BrisaTielly/ingredient-matcher-ptbr-model
-          --results-dir .ci-real-results
+          --results-dir ci-real-results
       - name: Upload real-data evaluation
         uses: actions/upload-artifact@v4
         with:
           name: real-open-prices-evaluation
-          path: .ci-real-results
+          path: ci-real-results
       - run: ruff check .
