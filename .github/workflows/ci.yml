@@ -12,8 +12,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install torch==2.9.1 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -e '.[dev]'
       - run: python -m ingredient_matcher.data
       - run: pytest -q
-      - run: python -m ingredient_matcher.evaluate --methods fuzzy
+      - name: Evaluate frozen benchmark
+        run: >-
+          python -m ingredient_matcher.evaluate
+          --methods fuzzy,fine_tuned
+          --fine-tuned-model BrisaTielly/ingredient-matcher-ptbr-model
+          --results-dir .ci-results
+      - name: Block metric regressions
+        run: >-
+          python scripts/check_regression.py
+          --baseline results/metrics.json
+          --candidate .ci-results/metrics.json
+          --method RapidFuzz
+          --method 'E5 fine-tuned'
       - run: ruff check .
