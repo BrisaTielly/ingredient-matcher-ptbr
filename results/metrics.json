@@ -1,0 +1,88 @@
+{
+  "methods": [
+    {
+      "method": "RapidFuzz",
+      "threshold_source": "validation",
+      "validation": {
+        "n": 33,
+        "threshold": 0.72,
+        "accuracy": 0.9393939393939394,
+        "precision": 0.9354838709677419,
+        "recall": 0.9666666666666667,
+        "f1": 0.9508196721311476,
+        "coverage": 0.9393939393939394,
+        "retrieval_top1_accuracy": 0.9666666666666667,
+        "recall_at_5": 1.0,
+        "no_match_accuracy": 0.6666666666666666
+      },
+      "test": {
+        "n": 66,
+        "threshold": 0.72,
+        "accuracy": 0.8787878787878788,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "coverage": 0.9090909090909091,
+        "retrieval_top1_accuracy": 0.9333333333333333,
+        "recall_at_5": 1.0,
+        "no_match_accuracy": 0.6666666666666666
+      }
+    },
+    {
+      "method": "E5 base",
+      "threshold_source": "validation",
+      "validation": {
+        "n": 33,
+        "threshold": 0.853194,
+        "accuracy": 0.7878787878787878,
+        "precision": 0.7878787878787878,
+        "recall": 0.8666666666666667,
+        "f1": 0.8253968253968254,
+        "coverage": 1.0,
+        "retrieval_top1_accuracy": 0.8666666666666667,
+        "recall_at_5": 1.0,
+        "no_match_accuracy": 0.0
+      },
+      "test": {
+        "n": 66,
+        "threshold": 0.853194,
+        "accuracy": 0.8484848484848485,
+        "precision": 0.8983050847457628,
+        "recall": 0.8833333333333333,
+        "f1": 0.8907563025210085,
+        "coverage": 0.8939393939393939,
+        "retrieval_top1_accuracy": 0.9333333333333333,
+        "recall_at_5": 1.0,
+        "no_match_accuracy": 0.5
+      }
+    },
+    {
+      "method": "E5 fine-tuned",
+      "threshold_source": "validation",
+      "validation": {
+        "n": 33,
+        "threshold": 0.754322,
+        "accuracy": 0.9696969696969697,
+        "precision": 0.9666666666666667,
+        "recall": 0.9666666666666667,
+        "f1": 0.9666666666666667,
+        "coverage": 0.9090909090909091,
+        "retrieval_top1_accuracy": 0.9666666666666667,
+        "recall_at_5": 1.0,
+        "no_match_accuracy": 1.0
+      },
+      "test": {
+        "n": 66,
+        "threshold": 0.754322,
+        "accuracy": 0.9696969696969697,
+        "precision": 0.9830508474576272,
+        "recall": 0.9666666666666667,
+        "f1": 0.9747899159663865,
+        "coverage": 0.8939393939393939,
+        "retrieval_top1_accuracy": 0.9833333333333333,
+        "recall_at_5": 1.0,
+        "no_match_accuracy": 1.0
+      }
+    }
+  ]
+}
